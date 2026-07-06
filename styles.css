@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 3-Tier Navbar Custom Styles */
 .nav-tier3 {
-    background-color: var(--primary-blue);
+    background-color: var(--color-secondary-green); /* Dark Green (#3B943A) */
     position: relative;
     overflow: hidden;
 }
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     right: calc(100% - 180px); /* Pins slanted edge 180px from left of container */
     left: -2000px; /* extends all the way to the left of the screen */
     height: 100%;
-    background-color: var(--primary-deep);
+    background-color: #245223; /* Deep Dark Green (#245223) */
     transform: skewX(-25deg);
     transform-origin: top right;
     z-index: 1;
@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: var(--primary-deep); /* #142213 */
+    background-color: #245223; /* Deep Dark Green (#245223) */
     z-index: 20;
     display: flex;
     align-items: center;
