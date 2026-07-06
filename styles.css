@@ -341,3 +341,26 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.1) translateY(-3px);
 }
 
+/* Slanted top utility bar container rules */
+.top-utility-bar {
+    position: relative;
+    background-color: var(--color-primary-dark); /* Đỏ đậm #A8201A */
+}
+
+.top-utility-right-container {
+    position: relative;
+}
+
+.top-utility-right-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: 0;
+    right: -2000px; /* extends all the way to the screen right edge */
+    background-color: var(--color-primary-orange); /* Cam #E05315 */
+    transform: skewX(-25deg);
+    transform-origin: top left;
+    z-index: -1;
+}
+
