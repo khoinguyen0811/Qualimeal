@@ -142,8 +142,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-tier3-link {
-    color: rgba(255, 255, 255, 0.9);
-    transition: all 0.2s ease-in-out;
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.3s ease;
     position: relative;
     white-space: nowrap; /* Prevent wrapping (rớt chữ) */
 }
@@ -152,11 +152,12 @@ h1, h2, h3, h4, h5, h6 {
     content: '';
     position: absolute;
     bottom: -4px;
-    left: 0;
+    left: 50%;
     width: 0;
     height: 2px;
     background-color: var(--primary-accent);
-    transition: width 0.2s ease-in-out;
+    transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: translateX(-50%);
 }
 
 .nav-tier3-link:hover::after,
@@ -166,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-tier3-link:hover,
 .nav-tier3-link.active {
-    color: #white;
+    color: var(--primary-accent) !important;
 }
 
 /* Custom button hover for Ochre Gold theme */
@@ -315,5 +316,30 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: calc(50vw - 608px);
         width: calc(50vw - 380px);
     }
+}
+
+/* Floating contact buttons styles & custom ripple pulse animation */
+@keyframes floating-phone-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(220, 38, 38, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+    }
+}
+
+.floating-phone-pulse {
+    animation: floating-phone-pulse 2s infinite;
+}
+
+/* Floating button subtle hover lift and scale */
+.floating-btn-lift {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+.floating-btn-lift:hover {
+    transform: scale(1.1) translateY(-3px);
 }
 

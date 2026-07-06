@@ -31,8 +31,8 @@
                 extend: {
                     colors: {
                         brand: {
-                            deep: '#142213',       /* Deep Forest Green */
-                            green: '#5d6837',      /* Olive/Sage Green */
+                            deep: '#7a1210',       /* Deep Corporate Dark Red */
+                            green: '#941f1c',      /* Corporate Red */
                             emerald: '#658568',    /* Medium Sage Green */
                             gold: '#cda069',       /* Ochre Gold */
                             beige: '#f5f3ef',      /* Warm Sand/Beige */
@@ -98,37 +98,37 @@
             </a>
             
             <!-- Info Blocks (3 Columns) -->
-            <div class="flex items-center space-x-8 text-sm">
+            <div class="flex items-stretch space-x-4 text-sm">
                 <!-- Phone Call Block -->
-                <a href="tel:19008888" class="flex items-center space-x-3 group">
-                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-300">
-                        <i class="fa-solid fa-phone-volume text-xl"></i>
+                <a href="tel:19008888" class="flex items-center space-x-3 px-4 py-2 bg-slate-50/60 border border-slate-100/80 rounded-xl transition-all duration-250 hover:bg-white hover:shadow-md hover:-translate-y-0.5 hover:border-brand-gold group h-14">
+                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-250 flex-shrink-0">
+                        <i class="fa-solid fa-phone-volume text-lg"></i>
                     </span>
-                    <div class="text-left">
-                        <span class="block text-[11px] uppercase text-slate-500 font-semibold tracking-wider">Liên hệ hỗ trợ</span>
-                        <span class="font-bold text-sm text-brand-deep group-hover:text-brand-green transition-colors">1900 8888</span>
+                    <div class="text-left flex flex-col justify-center">
+                        <span class="block text-[9.5px] uppercase text-slate-400 font-extrabold tracking-wider leading-none mb-1">Liên hệ hỗ trợ</span>
+                        <span class="font-bold text-xs xl:text-sm text-brand-deep group-hover:text-brand-gold transition-colors duration-250">1900 8888</span>
                     </div>
                 </a>
                 
                 <!-- Address Block -->
-                <div class="flex items-center space-x-3">
-                    <span class="text-brand-green">
-                        <i class="fa-solid fa-location-dot text-xl"></i>
+                <div class="flex items-center space-x-3 px-4 py-2 bg-slate-50/60 border border-slate-100/80 rounded-xl transition-all duration-250 hover:bg-white hover:shadow-md hover:-translate-y-0.5 hover:border-brand-gold group h-14 cursor-default">
+                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-250 flex-shrink-0">
+                        <i class="fa-solid fa-location-dot text-lg"></i>
                     </span>
-                    <div class="text-left">
-                        <span class="block text-[11px] uppercase text-slate-500 font-semibold tracking-wider">Địa chỉ</span>
-                        <span class="font-bold text-sm text-brand-deep">Quận 7, TP. Hồ Chí Minh</span>
+                    <div class="text-left flex flex-col justify-center">
+                        <span class="block text-[9.5px] uppercase text-slate-400 font-extrabold tracking-wider leading-none mb-1">Địa chỉ</span>
+                        <span class="font-bold text-xs xl:text-sm text-brand-deep group-hover:text-brand-gold transition-colors duration-250">Quận 7, TP. Hồ Chí Minh</span>
                     </div>
                 </div>
                 
                 <!-- Email Block -->
-                <a href="mailto:info@qualimeal.vn" class="flex items-center space-x-3 group">
-                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-300">
-                        <i class="fa-solid fa-envelope-open text-xl"></i>
+                <a href="mailto:info@qualimeal.vn" class="flex items-center space-x-3 px-4 py-2 bg-slate-50/60 border border-slate-100/80 rounded-xl transition-all duration-250 hover:bg-white hover:shadow-md hover:-translate-y-0.5 hover:border-brand-gold group h-14">
+                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-250 flex-shrink-0">
+                        <i class="fa-solid fa-envelope-open text-lg"></i>
                     </span>
-                    <div class="text-left">
-                        <span class="block text-[11px] uppercase text-slate-500 font-semibold tracking-wider">Email liên hệ</span>
-                        <span class="font-bold text-sm text-brand-deep group-hover:text-brand-green transition-colors">info@qualimeal.vn</span>
+                    <div class="text-left flex flex-col justify-center">
+                        <span class="block text-[9.5px] uppercase text-slate-400 font-extrabold tracking-wider leading-none mb-1">Email liên hệ</span>
+                        <span class="font-bold text-xs xl:text-sm text-brand-deep group-hover:text-brand-gold transition-colors duration-250">info@qualimeal.vn</span>
                     </div>
                 </a>
             </div>
@@ -178,7 +178,7 @@
     <div class="bg-brand-deep text-white py-3 px-4 flex items-center justify-between lg:hidden border-b border-white/10 shadow-md">
         <!-- Logo and mobile brand name (cleaned) -->
         <a href="index.html" class="flex items-center">
-            <img src="assets/logo.png" alt="QualiMeal Logo" class="h-10 w-auto object-contain">
+            <img src="assets/white_logo.png" alt="QualiMeal Logo" class="h-10 w-auto object-contain">
         </a>
         
         <!-- Mobile Actions -->
@@ -200,7 +200,7 @@
 <div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-80 max-w-sm bg-brand-deep text-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
     <div class="p-5 border-b border-white/10 flex items-center justify-between">
         <div class="flex items-center">
-            <img src="assets/logo.png" alt="QualiMeal Logo" class="h-8 w-auto object-contain">
+            <img src="assets/white_logo.png" alt="QualiMeal Logo" class="h-8 w-auto object-contain">
         </div>
         <button id="btn-close-mobile" class="text-slate-300 hover:text-white p-1">
             <i class="fa-solid fa-xmark text-2xl"></i>
@@ -809,9 +809,9 @@
     <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
         <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
             <div class="inline-flex items-center space-x-2">
-                <span class="h-1 w-6 bg-brand-emerald rounded"></span>
-                <span class="text-brand-emerald font-extrabold uppercase text-xs tracking-wider">Ứng Dụng Thực Tế</span>
-                <span class="h-1 w-6 bg-brand-emerald rounded"></span>
+                <span class="h-1 w-6 bg-brand-orange rounded"></span>
+                <span class="text-brand-orange font-extrabold uppercase text-xs tracking-wider">Ứng Dụng Thực Tế</span>
+                <span class="h-1 w-6 bg-brand-orange rounded"></span>
             </div>
             <h3 class="font-display font-extrabold text-3xl md:text-4xl">Giải Pháp Cho Chuỗi Sản Xuất & Kinh Doanh Thực Phẩm</h3>
             <p class="text-slate-400 text-sm md:text-base">Mô hình ứng dụng công nghệ khoa học của chúng tôi đa dạng trên nhiều lĩnh vực ngành hàng thực phẩm đóng chai, thực phẩm ăn liền.</p>
@@ -820,48 +820,48 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <!-- Category 1: Nước giải khát -->
-            <div class="group relative overflow-hidden rounded-3xl bg-slate-800/80 border border-slate-700/50 hover:border-brand-emerald/30 hover:shadow-2xl hover:shadow-brand-emerald/5 transition-all duration-300 p-6 flex flex-col justify-between h-[300px]">
+            <div class="group relative overflow-hidden rounded-3xl bg-slate-800/80 border border-slate-700/50 hover:border-brand-orange/30 hover:shadow-2xl hover:shadow-brand-orange/5 transition-all duration-300 p-6 flex flex-col justify-between h-[300px]">
                 <div class="space-y-4">
-                    <span class="inline-flex bg-brand-emerald/20 text-brand-emerald p-3 rounded-2xl">
+                    <span class="inline-flex bg-brand-orange/20 text-brand-orange p-3 rounded-2xl">
                         <i class="fa-solid fa-wine-glass-empty text-xl"></i>
                     </span>
-                    <h4 class="font-display font-extrabold text-lg group-hover:text-brand-emerald transition-colors duration-200">Nước giải khát & Nước ép</h4>
+                    <h4 class="font-display font-extrabold text-lg group-hover:text-brand-orange transition-colors duration-200">Nước giải khát & Nước ép</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">Ứng dụng công nghệ ép lạnh HPP, bảo quản tự nhiên không biến tính chất, giữ trọn vi chất dinh dưỡng của trái cây nhiệt đới.</p>
                 </div>
                 <span class="text-xs font-semibold text-slate-500 group-hover:text-white transition-colors duration-200">15+ Dòng sản phẩm trên thị trường</span>
             </div>
 
             <!-- Category 2: Sữa hạt -->
-            <div class="group relative overflow-hidden rounded-3xl bg-slate-800/80 border border-slate-700/50 hover:border-brand-emerald/30 hover:shadow-2xl hover:shadow-brand-emerald/5 transition-all duration-300 p-6 flex flex-col justify-between h-[300px]">
+            <div class="group relative overflow-hidden rounded-3xl bg-slate-800/80 border border-slate-700/50 hover:border-brand-orange/30 hover:shadow-2xl hover:shadow-brand-orange/5 transition-all duration-300 p-6 flex flex-col justify-between h-[300px]">
                 <div class="space-y-4">
-                    <span class="inline-flex bg-brand-emerald/20 text-brand-emerald p-3 rounded-2xl">
+                    <span class="inline-flex bg-brand-orange/20 text-brand-orange p-3 rounded-2xl">
                         <i class="fa-solid fa-mug-hot text-xl"></i>
                     </span>
-                    <h4 class="font-display font-extrabold text-lg group-hover:text-brand-emerald transition-colors duration-200">Sữa hạt dinh dưỡng</h4>
+                    <h4 class="font-display font-extrabold text-lg group-hover:text-brand-orange transition-colors duration-200">Sữa hạt dinh dưỡng</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">Nghiên cứu tỷ lệ đồng hóa, chống phân tầng lắng cặn đối với các loại sữa từ hạt điều, macca, hạt sen, hạnh nhân.</p>
                 </div>
                 <span class="text-xs font-semibold text-slate-500 group-hover:text-white transition-colors duration-200">Chuyển giao cho 8 tập đoàn lớn</span>
             </div>
 
             <!-- Category 3: Thực phẩm bảo vệ sức khỏe -->
-            <div class="group relative overflow-hidden rounded-3xl bg-slate-800/80 border border-slate-700/50 hover:border-brand-emerald/30 hover:shadow-2xl hover:shadow-brand-emerald/5 transition-all duration-300 p-6 flex flex-col justify-between h-[300px]">
+            <div class="group relative overflow-hidden rounded-3xl bg-slate-800/80 border border-slate-700/50 hover:border-brand-orange/30 hover:shadow-2xl hover:shadow-brand-orange/5 transition-all duration-300 p-6 flex flex-col justify-between h-[300px]">
                 <div class="space-y-4">
-                    <span class="inline-flex bg-brand-emerald/20 text-brand-emerald p-3 rounded-2xl">
+                    <span class="inline-flex bg-brand-orange/20 text-brand-orange p-3 rounded-2xl">
                         <i class="fa-solid fa-capsules text-xl"></i>
                     </span>
-                    <h4 class="font-display font-extrabold text-lg group-hover:text-brand-emerald transition-colors duration-200">Bảo vệ sức khỏe (Nutraceuticals)</h4>
+                    <h4 class="font-display font-extrabold text-lg group-hover:text-brand-orange transition-colors duration-200">Bảo vệ sức khỏe (Nutraceuticals)</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">Công thức nén viên, bột hòa tan chứa hoạt chất tự nhiên như sâm, đông trùng hạ thảo đông khô, tinh nghệ nano.</p>
                 </div>
                 <span class="text-xs font-semibold text-slate-500 group-hover:text-white transition-colors duration-200">Đạt chuẩn GMP Bộ Y Tế</span>
             </div>
 
             <!-- Category 4: Gia vị thực phẩm -->
-            <div class="group relative overflow-hidden rounded-3xl bg-slate-800/80 border border-slate-700/50 hover:border-brand-emerald/30 hover:shadow-2xl hover:shadow-brand-emerald/5 transition-all duration-300 p-6 flex flex-col justify-between h-[300px]">
+            <div class="group relative overflow-hidden rounded-3xl bg-slate-800/80 border border-slate-700/50 hover:border-brand-orange/30 hover:shadow-2xl hover:shadow-brand-orange/5 transition-all duration-300 p-6 flex flex-col justify-between h-[300px]">
                 <div class="space-y-4">
-                    <span class="inline-flex bg-brand-emerald/20 text-brand-emerald p-3 rounded-2xl">
+                    <span class="inline-flex bg-brand-orange/20 text-brand-orange p-3 rounded-2xl">
                         <i class="fa-solid fa-bowl-food text-xl"></i>
                     </span>
-                    <h4 class="font-display font-extrabold text-lg group-hover:text-brand-emerald transition-colors duration-200">Gia vị & Sốt pha sẵn</h4>
+                    <h4 class="font-display font-extrabold text-lg group-hover:text-brand-orange transition-colors duration-200">Gia vị & Sốt pha sẵn</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">Hệ cô đặc chân không giữ nguyên màu tự nhiên, giải pháp chống tách dầu cho các loại nước sốt salad, nước chấm đóng chai tiện lợi.</p>
                 </div>
                 <span class="text-xs font-semibold text-slate-500 group-hover:text-white transition-colors duration-200">Hàng tiêu dùng nhanh FMCG</span>
@@ -1223,6 +1223,27 @@
         </div>
     </div>
 </footer>
+
+<!-- FLOATING CONTACT BUTTONS (Task 6) -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3 pointer-events-none">
+    <!-- Facebook Messenger Button -->
+    <a href="https://m.me/qualimeal" target="_blank" rel="noopener noreferrer" class="pointer-events-auto w-12 h-12 rounded-full bg-[#0084ff] text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group relative floating-btn-lift" aria-label="Messenger">
+        <i class="fa-brands fa-facebook-messenger text-xl"></i>
+        <span class="absolute right-14 bg-slate-950 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-white/10">Facebook Messenger</span>
+    </a>
+    
+    <!-- Zalo Button -->
+    <a href="https://zalo.me/19008888" target="_blank" rel="noopener noreferrer" class="pointer-events-auto w-12 h-12 rounded-full bg-[#0068ff] text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group relative floating-btn-lift" aria-label="Zalo">
+        <span class="font-bold text-xs uppercase tracking-wider">Zalo</span>
+        <span class="absolute right-14 bg-slate-950 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-white/10">Chat Zalo</span>
+    </a>
+    
+    <!-- Phone / Hotline Button -->
+    <a href="tel:19008888" class="pointer-events-auto w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group relative floating-btn-lift floating-phone-pulse" aria-label="Hotline">
+        <i class="fa-solid fa-phone text-lg"></i>
+        <span class="absolute right-14 bg-slate-950 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-white/10">Hotline: 1900 8888</span>
+    </a>
+</div>
 
 
     <!-- ==========================================

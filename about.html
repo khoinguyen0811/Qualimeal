@@ -31,8 +31,8 @@
                 extend: {
                     colors: {
                         brand: {
-                            deep: '#142213',       /* Deep Forest Green */
-                            green: '#5d6837',      /* Olive/Sage Green */
+                            deep: '#7a1210',       /* Deep Corporate Dark Red */
+                            green: '#941f1c',      /* Corporate Red */
                             emerald: '#658568',    /* Medium Sage Green */
                             gold: '#cda069',       /* Ochre Gold */
                             beige: '#f5f3ef',      /* Warm Sand/Beige */
@@ -98,37 +98,37 @@
             </a>
             
             <!-- Info Blocks (3 Columns) -->
-            <div class="flex items-center space-x-8 text-sm">
+            <div class="flex items-stretch space-x-4 text-sm">
                 <!-- Phone Call Block -->
-                <a href="tel:19008888" class="flex items-center space-x-3 group">
-                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-300">
-                        <i class="fa-solid fa-phone-volume text-xl"></i>
+                <a href="tel:19008888" class="flex items-center space-x-3 px-4 py-2 bg-slate-50/60 border border-slate-100/80 rounded-xl transition-all duration-250 hover:bg-white hover:shadow-md hover:-translate-y-0.5 hover:border-brand-gold group h-14">
+                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-250 flex-shrink-0">
+                        <i class="fa-solid fa-phone-volume text-lg"></i>
                     </span>
-                    <div class="text-left">
-                        <span class="block text-[11px] uppercase text-slate-500 font-semibold tracking-wider">Liên hệ hỗ trợ</span>
-                        <span class="font-bold text-sm text-brand-deep group-hover:text-brand-green transition-colors">1900 8888</span>
+                    <div class="text-left flex flex-col justify-center">
+                        <span class="block text-[9.5px] uppercase text-slate-400 font-extrabold tracking-wider leading-none mb-1">Liên hệ hỗ trợ</span>
+                        <span class="font-bold text-xs xl:text-sm text-brand-deep group-hover:text-brand-gold transition-colors duration-250">1900 8888</span>
                     </div>
                 </a>
                 
                 <!-- Address Block -->
-                <div class="flex items-center space-x-3">
-                    <span class="text-brand-green">
-                        <i class="fa-solid fa-location-dot text-xl"></i>
+                <div class="flex items-center space-x-3 px-4 py-2 bg-slate-50/60 border border-slate-100/80 rounded-xl transition-all duration-250 hover:bg-white hover:shadow-md hover:-translate-y-0.5 hover:border-brand-gold group h-14 cursor-default">
+                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-250 flex-shrink-0">
+                        <i class="fa-solid fa-location-dot text-lg"></i>
                     </span>
-                    <div class="text-left">
-                        <span class="block text-[11px] uppercase text-slate-500 font-semibold tracking-wider">Địa chỉ</span>
-                        <span class="font-bold text-sm text-brand-deep">Quận 7, TP. Hồ Chí Minh</span>
+                    <div class="text-left flex flex-col justify-center">
+                        <span class="block text-[9.5px] uppercase text-slate-400 font-extrabold tracking-wider leading-none mb-1">Địa chỉ</span>
+                        <span class="font-bold text-xs xl:text-sm text-brand-deep group-hover:text-brand-gold transition-colors duration-250">Quận 7, TP. Hồ Chí Minh</span>
                     </div>
                 </div>
                 
                 <!-- Email Block -->
-                <a href="mailto:info@qualimeal.vn" class="flex items-center space-x-3 group">
-                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-300">
-                        <i class="fa-solid fa-envelope-open text-xl"></i>
+                <a href="mailto:info@qualimeal.vn" class="flex items-center space-x-3 px-4 py-2 bg-slate-50/60 border border-slate-100/80 rounded-xl transition-all duration-250 hover:bg-white hover:shadow-md hover:-translate-y-0.5 hover:border-brand-gold group h-14">
+                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-250 flex-shrink-0">
+                        <i class="fa-solid fa-envelope-open text-lg"></i>
                     </span>
-                    <div class="text-left">
-                        <span class="block text-[11px] uppercase text-slate-500 font-semibold tracking-wider">Email liên hệ</span>
-                        <span class="font-bold text-sm text-brand-deep group-hover:text-brand-green transition-colors">info@qualimeal.vn</span>
+                    <div class="text-left flex flex-col justify-center">
+                        <span class="block text-[9.5px] uppercase text-slate-400 font-extrabold tracking-wider leading-none mb-1">Email liên hệ</span>
+                        <span class="font-bold text-xs xl:text-sm text-brand-deep group-hover:text-brand-gold transition-colors duration-250">info@qualimeal.vn</span>
                     </div>
                 </a>
             </div>
@@ -178,7 +178,7 @@
     <div class="bg-brand-deep text-white py-3 px-4 flex items-center justify-between lg:hidden border-b border-white/10 shadow-md">
         <!-- Logo and mobile brand name (cleaned) -->
         <a href="index.html" class="flex items-center">
-            <img src="assets/logo.png" alt="QualiMeal Logo" class="h-10 w-auto object-contain">
+            <img src="assets/white_logo.png" alt="QualiMeal Logo" class="h-10 w-auto object-contain">
         </a>
         
         <!-- Mobile Actions -->
@@ -200,7 +200,7 @@
 <div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-80 max-w-sm bg-brand-deep text-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
     <div class="p-5 border-b border-white/10 flex items-center justify-between">
         <div class="flex items-center">
-            <img src="assets/logo.png" alt="QualiMeal Logo" class="h-8 w-auto object-contain">
+            <img src="assets/white_logo.png" alt="QualiMeal Logo" class="h-8 w-auto object-contain">
         </div>
         <button id="btn-close-mobile" class="text-slate-300 hover:text-white p-1">
             <i class="fa-solid fa-xmark text-2xl"></i>
@@ -629,6 +629,27 @@
         </div>
     </div>
 </footer>
+
+<!-- FLOATING CONTACT BUTTONS (Task 6) -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3 pointer-events-none">
+    <!-- Facebook Messenger Button -->
+    <a href="https://m.me/qualimeal" target="_blank" rel="noopener noreferrer" class="pointer-events-auto w-12 h-12 rounded-full bg-[#0084ff] text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group relative floating-btn-lift" aria-label="Messenger">
+        <i class="fa-brands fa-facebook-messenger text-xl"></i>
+        <span class="absolute right-14 bg-slate-950 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-white/10">Facebook Messenger</span>
+    </a>
+    
+    <!-- Zalo Button -->
+    <a href="https://zalo.me/19008888" target="_blank" rel="noopener noreferrer" class="pointer-events-auto w-12 h-12 rounded-full bg-[#0068ff] text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group relative floating-btn-lift" aria-label="Zalo">
+        <span class="font-bold text-xs uppercase tracking-wider">Zalo</span>
+        <span class="absolute right-14 bg-slate-950 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-white/10">Chat Zalo</span>
+    </a>
+    
+    <!-- Phone / Hotline Button -->
+    <a href="tel:19008888" class="pointer-events-auto w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group relative floating-btn-lift floating-phone-pulse" aria-label="Hotline">
+        <i class="fa-solid fa-phone text-lg"></i>
+        <span class="absolute right-14 bg-slate-950 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-white/10">Hotline: 1900 8888</span>
+    </a>
+</div>
 
 
     <!-- ==========================================
