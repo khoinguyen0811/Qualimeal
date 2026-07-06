@@ -62,8 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (pageId) {
         document.querySelectorAll(`[data-page="${pageId}"]`).forEach(link => {
             link.classList.add('active', 'nav-link-active');
-            // For tier 3 nav bar link
-            link.classList.add('text-brand-gold');
+            if (link.classList.contains('mobile-link')) {
+                link.classList.add('text-brand-orange');
+            } else {
+                link.classList.add('text-brand-gold');
+            }
         });
     }
 
