@@ -262,7 +262,6 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
         margin-top: 0;
         transition: max-height 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.5s ease-in-out;
-        text-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.9), 0 0 6px rgba(0, 0, 0, 0.5);
     }
 
     .accordion-panel.active .desc {
@@ -282,16 +281,14 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 1;
     }
 
-    /* Accordion title text color transitions for readability (always green, never red) */
+    /* Accordion title text color transitions (always green, never red, shadowless) */
     .accordion-panel .accordion-title {
         color: var(--primary-accent);
         transition: color 0.5s ease-in-out;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.5);
     }
 
     .accordion-panel.active .accordion-title {
         color: var(--primary-accent);
-        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.6);
     }
 }
 
