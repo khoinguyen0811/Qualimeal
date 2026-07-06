@@ -5,20 +5,43 @@
 */
 
 :root {
-    /* Primary Colors (Dark Red Brand Colors) */
-    --primary-deep: #7a1210;         /* Deep Corporate Dark Red */
-    --primary-blue: #941f1c;         /* Corporate Red */
-    --primary-accent: #cda069;       /* Ochre Gold */
-    
-    /* Secondary & Alert Colors */
-    --secondary-green: #658568;      /* Medium Sage Green */
-    --secondary-light: #cda069;      /* Ochre Gold Accent */
-    --accent-orange: #d97706;        /* Warm Amber */
-    --accent-gold: #cda069;          /* Ochre Gold */
-    
-    /* Neutral & Background Colors */
-    --text-dark: #2d1d1c;            /* Dark Charcoal with Red/Warm Undertone */
-    --text-muted: #6b5c5b;           /* Muted Warm Grey */
-    --bg-light: #f5f3ef;             /* Warm Sand / Sand-Beige */
-    --bg-dark-overlay: rgba(122, 18, 16, 0.85); /* Dark Red Overlay */
+  /* --- COLOR BRAND (PRIMARY & SECONDARY) --- */
+  /* Màu đỏ chính (phần đầu chữ Q và các chữ cái chính) */
+  --color-primary-dark: #A8201A;
+  --color-primary: #C82D1F;
+  
+  /* Màu cam chuyển sắc (phần đuôi chữ Qualimeals) */
+  --color-primary-orange: #E05315;
+  
+  /* Màu xanh lá điểm nhấn (phần chiếc lá dưới chữ Q và dấu chấm trên chữ i) */
+  --color-secondary-green: #3B943A;
+  --color-secondary-light: #76C143;
+
+  /* --- NEUTRAL COLORS (TEXT & BACKGROUNDS) --- */
+  /* Màu xám/đen từ slogan "Science • Quality • Food Solutions" */
+  --color-text-main: #1A1A1A;
+  --color-text-muted: #555555;
+  
+  /* Màu nền bổ trợ */
+  --color-bg-light: #F9FAFB;
+  --color-bg-white: #FFFFFF;
+  
+  /* --- GRADIENTS --- */
+  /* Gradient mô phỏng hiệu ứng chuyển màu của chữ Qualimeals */
+  --gradient-brand: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-orange) 100%);
+
+  /* --- MAPPED SYSTEM FOR LAYOUT COMPATIBILITY --- */
+  --primary-deep: var(--color-primary-dark);
+  --primary-blue: var(--color-primary);
+  --primary-accent: var(--color-secondary-light); /* Leaf green accent for nav links & highlights */
+  
+  --secondary-green: var(--color-secondary-green);
+  --secondary-light: var(--color-secondary-light);
+  --accent-orange: var(--color-primary-orange);
+  --accent-gold: var(--color-secondary-light);
+  
+  --text-dark: var(--color-text-main);
+  --text-muted: var(--color-text-muted);
+  --bg-light: var(--color-bg-light);
+  --bg-dark-overlay: rgba(168, 32, 26, 0.85); /* rgba value matching color-primary-dark */
 }
