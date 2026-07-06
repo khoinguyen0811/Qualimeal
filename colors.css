@@ -1,0 +1,24 @@
+/* 
+   QualiMeal - Root Color Variables File 
+   This file defines the primary corporate color palette.
+   Updated to match the new organic forest green, sage green, sand beige, and gold color scheme of the new banners.
+*/
+
+:root {
+    /* Primary Colors (Organic Brand Colors) */
+    --primary-deep: #142213;         /* Deep Forest Green */
+    --primary-blue: #5d6837;         /* Olive / Sage Green */
+    --primary-accent: #cda069;       /* Ochre Gold */
+    
+    /* Secondary & Alert Colors mapped to Organic Green & Gold */
+    --secondary-green: #658568;      /* Medium Sage Green */
+    --secondary-light: #cda069;      /* Ochre Gold Accent */
+    --accent-orange: #d97706;        /* Warm Amber */
+    --accent-gold: #cda069;          /* Ochre Gold */
+    
+    /* Neutral & Background Colors */
+    --text-dark: #1d241c;            /* Dark Charcoal with Green Undertone */
+    --text-muted: #5c685b;          /* Muted Sage Grey */
+    --bg-light: #f5f3ef;             /* Warm Sand / Sand-Beige */
+    --bg-dark-overlay: rgba(20, 34, 19, 0.85); /* Dark Green Overlay */
+}

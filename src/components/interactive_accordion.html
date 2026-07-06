@@ -1,0 +1,103 @@
+<!-- ==========================================
+     3. DỊCH VỤ ĐẶC TRƯNG (FULL-HEIGHT & FULL-WIDTH STATEFUL INTERACTIVE ACCORDION)
+     ========================================== -->
+<section id="interactive-accordion-section" class="relative overflow-hidden bg-cover bg-center bg-no-repeat bg-slate-900 z-10 w-full h-[600px] lg:h-[700px]" style="background-image: url('assets/banners/banner2.jpg');">
+    <!-- Dark mask overlay for section readability -->
+    <div class="absolute inset-0 bg-black/15 z-0"></div>
+
+    <!-- Giant outline decoration text in background (floating on top of panels but behind text) -->
+    <div class="absolute top-12 left-0 right-0 w-full overflow-hidden pointer-events-none select-none z-20">
+        <h2 class="text-6xl md:text-8xl font-black uppercase text-outline-white tracking-wider opacity-20 whitespace-nowrap animate-pulse">
+            YOUR TRUE PARTNER YOUR TRUE PARTNER YOUR TRUE PARTNER
+        </h2>
+    </div>
+
+    <!-- Full-Width & Full-Height Accordion Box (stretched edge-to-edge, filling 100% of parent section height) -->
+    <div class="accordion-container flex flex-col lg:flex-row w-full h-full overflow-hidden relative z-10 bg-black/5">
+        
+        <!-- Panel 1: NGUYÊN LIỆU KHOA HỌC ĐỜI SỐNG -->
+        <div class="accordion-panel active relative transition-all duration-700 ease-in-out cursor-pointer overflow-hidden h-full border-b lg:border-b-0 lg:border-r border-white/10 group" data-bg="assets/banners/banner2.jpg">
+            <!-- Backdrop Blur Overlay for inactive state (using white frosted glass theme, custom light blur and opacity) -->
+            <div class="accordion-blur-overlay absolute inset-0 backdrop-blur-[5px] bg-white/15 z-10"></div>
+            <!-- Dark gradient overlay for content readability in active state -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent z-15"></div>
+            
+            <!-- Content -->
+            <div class="absolute inset-0 flex flex-col justify-end p-8 md:p-12 text-white z-30">
+                <div class="max-w-xl transition-all duration-500 ease-in-out lg:pl-16 xl:pl-32">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <span class="h-5 w-[3px] bg-brand-gold rounded-full"></span>
+                        <h4 class="accordion-title font-display font-extrabold text-lg md:text-xl uppercase tracking-wider">
+                            Nguyên Liệu Khoa Học Đời Sống
+                        </h4>
+                    </div>
+                    <p class="desc text-xs md:text-sm text-slate-200 leading-relaxed">
+                        QualiMeal thừa hưởng năng lực nghiên cứu khoa học chuyên sâu, mang đến các giải pháp nguyên liệu sinh học và dinh dưỡng đột phá, đáp ứng tiêu chuẩn nghiêm ngặt và hỗ trợ cải thiện sức khỏe người tiêu dùng.
+                    </p>
+                </div>
+                
+                <!-- Circle arrow button -->
+                <div class="arrow-btn absolute bottom-8 right-8 w-12 h-12 rounded-full bg-brand-gold text-brand-deep flex items-center justify-center shadow-lg">
+                    <i class="fa-solid fa-arrow-up-right text-lg"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel 2: NGUYÊN LIỆU VÀ SẢN PHẨM THÀNH PHẨM -->
+        <div class="accordion-panel relative transition-all duration-700 ease-in-out cursor-pointer overflow-hidden h-full border-b lg:border-b-0 lg:border-r border-white/10 group" data-bg="assets/banners/banner5.jpg">
+            <!-- Backdrop Blur Overlay for inactive state (using white frosted glass theme, custom light blur and opacity) -->
+            <div class="accordion-blur-overlay absolute inset-0 backdrop-blur-[5px] bg-white/15 z-10"></div>
+            <!-- Dark gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent z-15"></div>
+            
+            <!-- Content -->
+            <div class="absolute inset-0 flex flex-col justify-end p-8 md:p-12 text-white z-30">
+                <div class="max-w-xl transition-all duration-500 ease-in-out">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <span class="h-5 w-[3px] bg-brand-gold rounded-full"></span>
+                        <h4 class="accordion-title font-display font-extrabold text-lg md:text-xl uppercase tracking-wider">
+                            Nguyên Liệu & Thành Phẩm
+                        </h4>
+                    </div>
+                    <p class="desc text-xs md:text-sm text-slate-200 leading-relaxed">
+                        Chúng tôi cung cấp giải pháp nguồn cung nguyên liệu hữu cơ tự nhiên cao cấp, chuẩn hóa đầu vào và chuyển giao công thức sản xuất thực phẩm trọn gói, gia tăng giá trị cạnh tranh trên thị trường.
+                    </p>
+                </div>
+                
+                <!-- Circle arrow button -->
+                <div class="arrow-btn absolute bottom-8 right-8 w-12 h-12 rounded-full bg-brand-gold text-brand-deep flex items-center justify-center shadow-lg">
+                    <i class="fa-solid fa-arrow-up-right text-lg"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel 3: DỊCH VỤ HẬU CẦN CHUYÊN NGHIỆP -->
+        <div class="accordion-panel relative transition-all duration-700 ease-in-out cursor-pointer overflow-hidden h-full group" data-bg="assets/banners/banner6.jpg">
+            <!-- Backdrop Blur Overlay for inactive state (using white frosted glass theme, custom light blur and opacity) -->
+            <div class="accordion-blur-overlay absolute inset-0 backdrop-blur-[5px] bg-white/15 z-10"></div>
+            <!-- Dark gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent z-15"></div>
+            
+            <!-- Content -->
+            <div class="absolute inset-0 flex flex-col justify-end p-8 md:p-12 text-white z-30">
+                <div class="max-w-xl transition-all duration-500 ease-in-out lg:pr-16 xl:pr-32">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <span class="h-5 w-[3px] bg-brand-gold rounded-full"></span>
+                        <h4 class="accordion-title font-display font-extrabold text-lg md:text-xl uppercase tracking-wider">
+                            Dịch Vụ Hậu Cần Chuyên Nghiệp
+                        </h4>
+                    </div>
+                    <p class="desc text-xs md:text-sm text-slate-200 leading-relaxed">
+                        Sở hữu mạng lưới kho bảo quản lạnh hiện đại bậc nhất, QualiMeal bảo đảm chất lượng nguyên liệu thô và thành phẩm được duy trì hoàn hảo và ổn định suốt vòng đời sản phẩm.
+                    </p>
+                </div>
+                
+                <!-- Circle arrow button -->
+                <div class="arrow-btn absolute bottom-8 right-8 w-12 h-12 rounded-full bg-brand-gold text-brand-deep flex items-center justify-center shadow-lg">
+                    <i class="fa-solid fa-arrow-up-right text-lg"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

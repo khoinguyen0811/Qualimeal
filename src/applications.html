@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng Dụng Thực Tế Ngành Hàng Thực Phẩm - QualiMeal</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Các giải pháp ứng dụng công nghệ của QualiMeal trong sản xuất nước giải khát, sữa hạt, thực phẩm bảo vệ sức khỏe và nước sốt gia vị đóng chai.">
+    <meta name="keywords" content="ứng dụng công nghệ thực phẩm, sữa hạt dinh dưỡng, nước giải khát HPP">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preconnect and Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- Custom & Root Color CSS -->
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#142213',       /* Deep Forest Green */
+                            green: '#5d6837',      /* Olive/Sage Green */
+                            emerald: '#658568',    /* Medium Sage Green */
+                            gold: '#cda069',       /* Ochre Gold */
+                            beige: '#f5f3ef',      /* Warm Sand/Beige */
+                            orange: '#d97706',     /* Warm Amber */
+                            light: '#faf8f5'       /* Warm White */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Iosevka Charon"', 'sans-serif'],
+                        display: ['"Roboto Condensed"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Deferred Interactivity Logic -->
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-brand-beige text-[#2d3527] font-sans antialiased overflow-x-hidden" data-page="applications">
+
+    <!-- INCLUDE components/header.html -->
+
+
+
+    <!-- Page Title Banner -->
+    <div class="bg-brand-deep text-white py-12 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('assets/banners/banner9.jpg');"></div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+            <h1 class="font-display font-extrabold text-3xl md:text-4xl text-brand-gold">Ứng Dụng Thực Tế</h1>
+            <p class="text-sm text-slate-300 max-w-lg mx-auto">Chuyển giao và thương mại hóa thành công công thức thực phẩm tại Việt Nam.</p>
+        </div>
+    </div>
+
+    <!-- INCLUDE components/applications.html -->
+
+    <!-- Extra Application Success Showcase -->
+    <section class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="bg-brand-beige rounded-3xl p-8 border border-slate-200/50 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h4 class="font-display font-bold text-lg text-brand-deep">Bạn muốn thử nghiệm sản phẩm mẫu cảm quan?</h4>
+                    <p class="text-xs text-slate-500 mt-1">Liên hệ để đăng ký nhận mẫu thử nghiệm miễn phí các dòng sản phẩm R&D độc quyền từ QualiMeal.</p>
+                </div>
+                <a href="contact.html" class="px-5 py-3 bg-brand-gold hover:bg-amber-600 text-brand-deep font-bold text-xs md:text-sm rounded-xl shadow-md transition-colors">
+                    Đăng Ký Nhận Mẫu Thử
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INCLUDE components/footer.html -->
+
+    <!-- INCLUDE components/modals.html -->
+
+</body>
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức & Kiến Thức Chuyên Ngành Thực Phẩm - QualiMeal</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Cập nhật tin tức an toàn thực phẩm, kiến thức kỹ thuật R&D, tiêu chuẩn chất lượng ISO 22000, HACCP mới nhất từ chuyên gia QualiMeal.">
+    <meta name="keywords" content="tin tức an toàn thực phẩm, kiến thức ISO, kỹ thuật R&D">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preconnect and Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- Custom & Root Color CSS -->
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#142213',       /* Deep Forest Green */
+                            green: '#5d6837',      /* Olive/Sage Green */
+                            emerald: '#658568',    /* Medium Sage Green */
+                            gold: '#cda069',       /* Ochre Gold */
+                            beige: '#f5f3ef',      /* Warm Sand/Beige */
+                            orange: '#d97706',     /* Warm Amber */
+                            light: '#faf8f5'       /* Warm White */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Iosevka Charon"', 'sans-serif'],
+                        display: ['"Roboto Condensed"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Deferred Interactivity Logic -->
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-brand-beige text-[#2d3527] font-sans antialiased overflow-x-hidden" data-page="blog">
+
+    <!-- ==========================================
+     STICKY HEADER (3-TIER PROFESSIONAL NAVBAR)
+     ========================================== -->
+<header class="relative z-40 bg-white shadow-md">
+    
+    <!-- ================= TẦNG 1: TOP BAR (Utility Bar) ================= -->
+    <div class="bg-brand-deep text-white/90 py-2 px-4 md:px-8 text-xs border-b border-white/5 hidden lg:block">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Left Side: Announcement / Brand Motto -->
+            <div class="flex items-center space-x-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+                <span>Trung tâm Nghiên cứu R&D & Chứng nhận Chất lượng QualiMeal</span>
+            </div>
+            
+            <!-- Right Side: Working hours & Social Media -->
+            <div class="flex items-center space-x-6">
+                <!-- Working hours -->
+                <div class="flex items-center space-x-1.5 text-slate-300">
+                    <i class="fa-regular fa-clock text-brand-gold"></i>
+                    <span>Giờ làm việc: Thứ 2 - Thứ 7 (8:00 - 18:00)</span>
+                </div>
+                
+                <!-- Divider -->
+                <span class="text-white/20">|</span>
+                
+                <!-- Social links -->
+                <div class="flex items-center space-x-3 text-slate-300">
+                    <a href="#" class="hover:text-brand-gold transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-brand-gold transition-colors" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="hover:text-brand-gold transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= TẦNG 2: MIDDLE BAR (Brand & Contact Info) ================= -->
+    <div class="bg-white text-brand-deep py-4 px-4 md:px-8 border-b border-slate-100 hidden lg:block">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo & Brand Name (cleaned and no hover scale/bg/text) -->
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo.png" alt="QualiMeal Logo" class="h-14 w-auto object-contain">
+            </a>
+            
+            <!-- Info Blocks (3 Columns) -->
+            <div class="flex items-center space-x-8 text-sm">
+                <!-- Phone Call Block -->
+                <a href="tel:19008888" class="flex items-center space-x-3 group">
+                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-300">
+                        <i class="fa-solid fa-phone-volume text-xl"></i>
+                    </span>
+                    <div class="text-left">
+                        <span class="block text-[11px] uppercase text-slate-500 font-semibold tracking-wider">Liên hệ hỗ trợ</span>
+                        <span class="font-bold text-sm text-brand-deep group-hover:text-brand-green transition-colors">1900 8888</span>
+                    </div>
+                </a>
+                
+                <!-- Address Block -->
+                <div class="flex items-center space-x-3">
+                    <span class="text-brand-green">
+                        <i class="fa-solid fa-location-dot text-xl"></i>
+                    </span>
+                    <div class="text-left">
+                        <span class="block text-[11px] uppercase text-slate-500 font-semibold tracking-wider">Địa chỉ</span>
+                        <span class="font-bold text-sm text-brand-deep">Quận 7, TP. Hồ Chí Minh</span>
+                    </div>
+                </div>
+                
+                <!-- Email Block -->
+                <a href="mailto:info@qualimeal.vn" class="flex items-center space-x-3 group">
+                    <span class="text-brand-green group-hover:text-brand-gold transition-colors duration-300">
+                        <i class="fa-solid fa-envelope-open text-xl"></i>
+                    </span>
+                    <div class="text-left">
+                        <span class="block text-[11px] uppercase text-slate-500 font-semibold tracking-wider">Email liên hệ</span>
+                        <span class="font-bold text-sm text-brand-deep group-hover:text-brand-green transition-colors">info@qualimeal.vn</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= TẦNG 3: BOTTOM BAR (Main Navigation Links) ================= -->
+    <div class="nav-tier3 text-white hidden lg:block">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-0 h-14 relative nav-tier3-container">
+            
+            <!-- Left skewed block overlap decoration - links are positioned relatively -->
+            <div class="nav-tier3-content flex items-center h-full space-x-1">
+                <!-- Dummy spacer to account for slanted shape area -->
+                <div class="w-[180px]"></div>
+                
+                <!-- Nav Links -->
+                <a href="index.html" class="nav-tier3-link px-1.5 xl:px-3 py-2 font-bold text-[10px] xl:text-[11px] uppercase tracking-wider h-full flex items-center" data-page="index">Trang chủ</a>
+                <a href="about.html" class="nav-tier3-link px-1.5 xl:px-3 py-2 font-bold text-[10px] xl:text-[11px] uppercase tracking-wider h-full flex items-center" data-page="about">Giới thiệu</a>
+                <a href="services.html" class="nav-tier3-link px-1.5 xl:px-3 py-2 font-bold text-[10px] xl:text-[11px] uppercase tracking-wider h-full flex items-center" data-page="services">Dịch vụ khoa học công nghệ</a>
+                <a href="rd.html" class="nav-tier3-link px-1.5 xl:px-3 py-2 font-bold text-[10px] xl:text-[11px] uppercase tracking-wider h-full flex items-center" data-page="rd">Nghiên cứu và phát triển sản phẩm</a>
+                <a href="applications.html" class="nav-tier3-link px-1.5 xl:px-3 py-2 font-bold text-[10px] xl:text-[11px] uppercase tracking-wider h-full flex items-center" data-page="applications">Ứng dụng (sản xuất kinh doanh thực phẩm)</a>
+                
+                <!-- Dropdown: Tin tức - Kiến thức -->
+                <div class="group/dropdown relative h-full flex items-center">
+                    <a href="#" class="nav-tier3-link px-1.5 xl:px-3 py-2 font-bold text-[10px] xl:text-[11px] uppercase tracking-wider h-full flex items-center" data-page="blog">
+                        Tin tức - Kiến thức <i class="fa-solid fa-chevron-down ml-1.5 text-[8px] transition-transform duration-200 group-hover/dropdown:rotate-180"></i>
+                    </a>
+                    <div class="absolute top-full left-0 w-44 bg-brand-deep rounded-b-xl shadow-xl py-2 hidden group-hover/dropdown:block border-t border-white/5 z-50">
+                        <a href="blog.html?cat=news" class="block px-4 py-2.5 text-xs font-semibold text-slate-300 hover:text-brand-gold hover:bg-white/5 transition duration-150 uppercase tracking-wider">Tin tức</a>
+                        <a href="blog.html?cat=knowledge" class="block px-4 py-2.5 text-xs font-semibold text-slate-300 hover:text-brand-gold hover:bg-white/5 transition duration-150 uppercase tracking-wider">Kiến thức</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="nav-tier3-link px-1.5 xl:px-3 py-2 font-bold text-[10px] xl:text-[11px] uppercase tracking-wider h-full flex items-center" data-page="contact">Liên hệ</a>
+            </div>
+            
+            <!-- Right Search CTA Button -->
+            <div class="nav-tier3-content flex items-center">
+                <button id="btn-search-nav" class="p-2.5 rounded-lg text-white hover:bg-white/10 hover:text-brand-gold transition duration-200" aria-label="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass text-base"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MOBILE HEADER (Simplified Single-Tier Navbar) ================= -->
+    <div class="bg-brand-deep text-white py-3 px-4 flex items-center justify-between lg:hidden border-b border-white/10 shadow-md">
+        <!-- Logo and mobile brand name (cleaned) -->
+        <a href="index.html" class="flex items-center">
+            <img src="assets/logo.png" alt="QualiMeal Logo" class="h-10 w-auto object-contain">
+        </a>
+        
+        <!-- Mobile Actions -->
+        <div class="flex items-center space-x-2">
+            <button id="btn-search-mobile" class="inline-flex items-center justify-center p-2.5 rounded-xl bg-transparent text-white hover:text-brand-gold transition-all duration-200" aria-label="Tìm kiếm">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button id="btn-mobile-menu" class="inline-flex items-center justify-center p-2.5 rounded-xl bg-transparent text-white hover:text-brand-gold transition duration-200" aria-label="Mở menu di động">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- MOBILE DRAWER OVERLAY -->
+<div id="mobile-drawer-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300 pointer-events-none"></div>
+
+<!-- MOBILE DRAWER MENU (Hệ thống Menu di động trượt) -->
+<div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-80 max-w-sm bg-brand-deep text-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="p-5 border-b border-white/10 flex items-center justify-between">
+        <div class="flex items-center">
+            <img src="assets/logo.png" alt="QualiMeal Logo" class="h-8 w-auto object-contain">
+        </div>
+        <button id="btn-close-mobile" class="text-slate-300 hover:text-white p-1">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto py-6 px-5 space-y-6">
+        <ul class="space-y-4 text-slate-300 font-semibold text-base">
+            <li><a href="index.html" class="mobile-link block hover:text-brand-gold py-2 border-b border-slate-800" data-page="index">Trang chủ</a></li>
+            <li><a href="about.html" class="mobile-link block hover:text-brand-gold py-2 border-b border-slate-800" data-page="about">Giới thiệu</a></li>
+            <li><a href="services.html" class="mobile-link block hover:text-brand-gold py-2 border-b border-slate-800" data-page="services">Dịch vụ khoa học công nghệ</a></li>
+            <li><a href="rd.html" class="mobile-link block hover:text-brand-gold py-2 border-b border-slate-800" data-page="rd">Nghiên cứu và phát triển sản phẩm</a></li>
+            <li><a href="applications.html" class="mobile-link block hover:text-brand-gold py-2 border-b border-slate-800" data-page="applications">Ứng dụng (sản xuất kinh doanh thực phẩm)</a></li>
+            <li>
+                <div class="border-b border-slate-800 py-2">
+                    <span class="block text-slate-400 text-xs font-bold uppercase tracking-wider pb-2">Tin tức & Kiến thức</span>
+                    <ul class="pl-4 space-y-2 text-sm">
+                        <li><a href="blog.html?cat=news" class="mobile-link block hover:text-brand-gold py-1" data-page="blog">Tin tức</a></li>
+                        <li><a href="blog.html?cat=knowledge" class="mobile-link block hover:text-brand-gold py-1" data-page="blog">Kiến thức</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="contact.html" class="mobile-link block hover:text-brand-gold py-2 border-b border-slate-800" data-page="contact">Liên hệ</a></li>
+        </ul>
+
+        <div class="space-y-4 pt-6 border-t border-slate-800">
+            <a href="tel:19008888" class="flex items-center space-x-3 p-3 rounded-xl bg-white/5 text-slate-200">
+                <i class="fa-solid fa-phone-volume text-brand-gold"></i>
+                <span class="font-bold text-sm">Hotline: 1900 8888</span>
+            </a>
+            
+            <div class="flex items-start space-x-3 p-3 rounded-xl bg-white/5 text-slate-300 text-xs leading-relaxed">
+                <i class="fa-solid fa-location-dot mt-0.5 text-brand-gold"></i>
+                <span>Địa chỉ: Quận 7, TP. Hồ Chí Minh</span>
+            </div>
+
+            <a href="mailto:info@qualimeal.vn" class="flex items-center space-x-3 p-3 rounded-xl bg-white/5 text-slate-300 text-xs">
+                <i class="fa-solid fa-envelope mt-0.5 text-brand-gold"></i>
+                <span>Email: info@qualimeal.vn</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ==========================================
+     COMPACT STICKY NAVBAR (Appears on Scroll)
+     ========================================== -->
+<div id="sticky-navbar" class="fixed top-0 left-0 right-0 h-16 bg-brand-green text-white shadow-xl z-50 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 hidden lg:block">
+    
+    <!-- Deep Green Logo Block with Slanted Edge (Extends all the way to screen left edge) -->
+    <div class="sticky-logo-block">
+        <a href="index.html" class="flex items-center">
+            <img src="assets/white_logo.png" alt="QualiMeal Logo" class="h-9 w-auto object-contain">
+        </a>
+    </div>
+
+    <div class="max-w-7xl mx-auto h-full flex items-center justify-between relative px-8">
+        
+        <!-- Spacer to prevent content overlapping with the absolute logo block -->
+        <div class="w-[140px] xl:w-[260px] h-full flex-shrink-0"></div>
+
+        <!-- Navigation Links (Right Side) -->
+        <nav class="flex items-center space-x-2.5 xl:space-x-5 text-[9px] xl:text-[10.5px] font-bold font-display uppercase tracking-wider h-full">
+            <a href="index.html" data-page="index" class="hover:text-brand-deep transition-colors py-2 border-b-2 border-transparent hover:border-brand-deep whitespace-nowrap">Trang chủ</a>
+            <a href="about.html" data-page="about" class="hover:text-brand-deep transition-colors py-2 border-b-2 border-transparent hover:border-brand-deep whitespace-nowrap">Giới thiệu</a>
+            <a href="services.html" data-page="services" class="hover:text-brand-deep transition-colors py-2 border-b-2 border-transparent hover:border-brand-deep whitespace-nowrap">Dịch vụ khoa học công nghệ</a>
+            <a href="rd.html" data-page="rd" class="hover:text-brand-deep transition-colors py-2 border-b-2 border-transparent hover:border-brand-deep whitespace-nowrap">Nghiên cứu và phát triển sản phẩm</a>
+            <a href="applications.html" data-page="applications" class="hover:text-brand-deep transition-colors py-2 border-b-2 border-transparent hover:border-brand-deep whitespace-nowrap">Ứng dụng (sản xuất kinh doanh thực phẩm)</a>
+            
+            <!-- Dropdown: Tin tức - Kiến thức -->
+            <div class="group/dropdown relative h-full flex items-center whitespace-nowrap">
+                <a href="#" class="hover:text-brand-deep transition-colors py-2 border-b-2 border-transparent hover:border-brand-deep flex items-center whitespace-nowrap" data-page="blog">
+                    Tin tức - Kiến thức <i class="fa-solid fa-chevron-down ml-1 text-[8px] transition-transform duration-200 group-hover/dropdown:rotate-180"></i>
+                </a>
+                <div class="absolute top-full left-0 w-44 bg-brand-green rounded-b-xl shadow-xl py-2 hidden group-hover/dropdown:block border-t border-white/10 z-50">
+                    <a href="blog.html?cat=news" class="block px-4 py-2.5 text-[10px] font-bold text-white hover:text-brand-deep hover:bg-white/10 transition duration-150 uppercase tracking-wider whitespace-nowrap">Tin tức</a>
+                    <a href="blog.html?cat=knowledge" class="block px-4 py-2.5 text-[10px] font-bold text-white hover:text-brand-deep hover:bg-white/10 transition duration-150 uppercase tracking-wider whitespace-nowrap">Kiến thức</a>
+                </div>
+            </div>
+
+            <a href="contact.html" data-page="contact" class="hover:text-brand-deep transition-colors py-2 border-b-2 border-transparent hover:border-brand-deep whitespace-nowrap">Liên hệ</a>
+        </nav>
+
+        <!-- Far Right Actions (Search Icon or Consult Button) -->
+        <div class="flex items-center space-x-4 relative z-30">
+            <button id="btn-search-sticky" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 hover:text-brand-deep flex items-center justify-center transition-colors" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass text-xs"></i>
+            </button>
+            <a href="contact.html" class="px-4 py-2 bg-brand-deep hover:bg-[#1f331e] text-white hover:text-brand-gold font-bold text-[10px] rounded-lg shadow transition duration-250 whitespace-nowrap">
+                Đăng ký tư vấn
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+    <!-- Page Title Banner -->
+    <div class="bg-brand-deep text-white py-12 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('assets/banners/banner10.jpg');"></div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+            <h1 class="font-display font-extrabold text-3xl md:text-4xl text-brand-gold">Tin Tức & Kiến Thức</h1>
+            <p class="text-sm text-slate-300 max-w-lg mx-auto">Kiến thức chuyên môn, thông cáo pháp luật và tin tức sự kiện nổi bật của QualiMeal.</p>
+        </div>
+    </div>
+
+    <!-- ==========================================
+     6. TIN TỨC - THÔNG BÁO - KIẾN THỨC
+     ========================================== -->
+<section id="blog" class="py-16 md:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+        
+        <!-- Tab buttons navigation -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-200 pb-6 mb-12 space-y-4 md:space-y-0">
+            <div class="space-y-2">
+                <span class="text-brand-emerald font-extrabold uppercase text-xs tracking-wider">Thông Tin Tổng Hợp</span>
+                <h3 class="font-display font-extrabold text-3xl text-brand-deep">Truyền Thông & Tri Thức Thực Phẩm</h3>
+            </div>
+            
+            <div class="flex flex-wrap gap-2 md:gap-4 border-b md:border-b-0">
+                <button data-tab="news" class="tab-btn px-4 py-2 text-brand-emerald border-brand-emerald border-b-2 font-bold text-sm transition-all focus:outline-none">
+                    Tin Tức Sự Kiện
+                </button>
+                <button id="announcements" data-tab="announcements" class="tab-btn px-4 py-2 text-slate-500 font-medium text-sm transition-all focus:outline-none">
+                    Thông Báo Chính Thức
+                </button>
+                <button id="knowledge" data-tab="knowledge" class="tab-btn px-4 py-2 text-slate-500 font-medium text-sm transition-all focus:outline-none">
+                    Kiến Thức Chuyên Môn
+                </button>
+            </div>
+        </div>
+
+        <!-- Tab Content 1: Tin Tức -->
+        <div id="tab-news" class="tab-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- News Card 1 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?q=80&w=800&auto=format&fit=crop" alt="Hội nghị an toàn thực phẩm" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-emerald">Sự kiện quốc tế</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">QualiMeal Tham Gia Diễn Đàn Khoa Học Thực Phẩm Châu Á 2026</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Chia sẻ các đề tài nghiên cứu mới nhất về chiết xuất hoạt chất sinh học từ vỏ chanh leo phục vụ công nghiệp bảo quản xanh thực phẩm sạch.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>01/07/2026</span>
+                        <span>Đăng bởi: Ban Truyền Thông</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Card 2 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <img src="https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?q=80&w=800&auto=format&fit=crop" alt="Lab R&D khai trương" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-accent">Hoạt động nội bộ</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Khai Trương Phòng Lab Kiểm Nghiệm Vi Sinh Hiện Đại Tại TP. HCM</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Nâng cấp năng lực phân tích mẫu thử gấp đôi, trang bị hệ thống PCR thế hệ mới cho phép trả kết quả nhiễm khuẩn độc tố Salmonella trong 24 giờ.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>28/06/2026</span>
+                        <span>Đăng bởi: Khối Kỹ Thuật</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Card 3 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <img src="https://images.unsplash.com/photo-1607619056574-7b8d304b3b8c?q=80&w=800&auto=format&fit=crop" alt="Ký kết chứng nhận" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-gold">Hợp tác phát triển</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Ký Kết Hợp Tác R&D Toàn Diện Với Tổng Công Ty Nông Nghiệp Xanh</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Mở ra lộ trình phát triển 5 dòng thực phẩm chức năng ứng dụng nguyên liệu nông sản organic chất lượng cao đạt tiêu chuẩn USDA.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>20/06/2026</span>
+                        <span>Đăng bởi: Ban Đối Ngoại</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Tab Content 2: Thông Báo (Hidden by default) -->
+        <div id="tab-announcements" class="tab-content hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Announcement Card 1 -->
+            <article class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-64">
+                <div class="space-y-3">
+                    <span class="inline-block px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 font-bold text-[10px] uppercase tracking-wider">Thông báo khẩn</span>
+                    <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Cảnh Báo Thay Đổi Hướng Dẫn Tự Công Bố Sản Phẩm Nhập Khẩu 2026</a></h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Lưu ý cập nhật tờ khai mới theo mẫu thông tư sửa đổi bổ sung của Bộ Y Tế từ ngày 01/07/2026 để tránh bị chậm trễ thông quan.</p>
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                    <span>25/06/2026</span>
+                    <span>Phòng Pháp Lý</span>
+                </div>
+            </article>
+
+            <!-- Announcement Card 2 -->
+            <article class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-64">
+                <div class="space-y-3">
+                    <span class="inline-block px-2.5 py-0.5 rounded bg-brand-emerald/15 text-brand-green font-bold text-[10px] uppercase tracking-wider">Hành chính</span>
+                    <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Lịch Nghỉ Lễ Quốc Khánh & Lịch Trực Phòng Lab Đánh Giá</a></h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">QualiMeal trân trọng thông báo lịch nghỉ lễ chính thức và sắp xếp đội ngũ kỹ thuật viên trực phòng lab 24/7 phục vụ các mẫu kiểm nhanh.</p>
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                    <span>15/06/2026</span>
+                    <span>Ban Nhân Sự</span>
+                </div>
+            </article>
+
+            <!-- Announcement Card 3 -->
+            <article class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-64">
+                <div class="space-y-3">
+                    <span class="inline-block px-2.5 py-0.5 rounded bg-blue-50 text-blue-600 font-bold text-[10px] uppercase tracking-wider">Chứng nhận</span>
+                    <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Công Bố Cập Nhật Mẫu Phôi Chứng Chỉ ISO Tích Hợp QR Tra Cứu</a></h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Kể từ ngày 15/06/2026, toàn bộ chứng chỉ ISO 22000, HACCP do QualiMeal cấp sẽ tích hợp QR Code liên kết trực tiếp hệ thống đối soát dữ liệu.</p>
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                    <span>12/06/2026</span>
+                    <span>Khối Chứng Nhận</span>
+                </div>
+            </article>
+        </div>
+
+        <!-- Tab Content 3: Kiến Thức (Hidden by default) -->
+        <div id="tab-knowledge" class="tab-content hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Knowledge Card 1 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-emerald">Tiêu chuẩn ISO</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">ISO 22000 và HACCP Khác Nhau Như Thế Nào?</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Phân tích chuyên sâu điểm tương đồng và khác biệt giữa 2 tiêu chuẩn. Giúp doanh nghiệp chọn đúng tiêu chuẩn phù hợp với năng lực sản xuất hiện tại.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>10 phút đọc</span>
+                        <span>Tác giả: GS. Nguyễn Văn An</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Knowledge Card 2 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-accent">Hóa học thực phẩm</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Giải Pháp Kéo Dài Hạn Sử Dụng Thực Phẩm Bằng Công Nghệ Bao Gói Khí Biến Tính MAP</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Giải pháp bảo quản tối ưu cho các sản phẩm thịt tươi sống và rau xanh xuất khẩu không dùng chất bảo quản hóa học.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>15 phút đọc</span>
+                        <span>Tác giả: TS. Lê Mai Chi (R&D)</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Knowledge Card 3 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-gold">HACCP</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Cách Xác Định Điểm Kiểm Soát Tới Hạn (CCP) Trong Dây Chuyền Sữa Tiệt Trùng</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Hướng dẫn từng bước sử dụng cây quyết định (decision tree) để thiết lập và giám sát các điểm CCP quan trọng nhất.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>12 phút đọc</span>
+                        <span>Tác giả: Kiểm toán viên Trần Quốc Việt</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- ==========================================
+     FOOTER SECTION
+     ========================================== -->
+<footer class="bg-brand-deep text-white border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <!-- Col 1: About Corporate -->
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <img src="assets/white_logo.png" alt="QualiMeal Logo" class="h-10 w-auto object-contain">
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">Đơn vị tiên phong tích hợp dịch vụ khoa học công nghệ, nghiên cứu ứng dụng thực phẩm R&D và tư vấn cấp chứng nhận ISO hàng đầu tại Việt Nam.</p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="#" class="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center text-slate-300 hover:bg-brand-gold hover:text-brand-deep transition duration-200"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center text-slate-300 hover:bg-brand-gold hover:text-brand-deep transition duration-200"><i class="fa-brands fa-youtube text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center text-slate-300 hover:bg-brand-gold hover:text-brand-deep transition duration-200"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Services Quick Links -->
+            <div class="space-y-4">
+                <h5 class="font-bold text-sm uppercase tracking-wider text-slate-200">Dịch Vụ Khoa Học</h5>
+                <ul class="space-y-2 text-xs text-slate-400 font-semibold">
+                    <li><a href="services.html" class="hover:text-brand-gold transition-colors">Tư vấn chứng nhận ISO 22000</a></li>
+                    <li><a href="services.html" class="hover:text-brand-gold transition-colors">Đánh giá chứng nhận HACCP / GMP</a></li>
+                    <li><a href="services.html" class="hover:text-brand-gold transition-colors">Kiểm nghiệm vi sinh & dinh dưỡng</a></li>
+                    <li><a href="services.html" class="hover:text-brand-gold transition-colors">Đăng ký FDA & Mã số mã vạch</a></li>
+                    <li><a href="services.html" class="hover:text-brand-gold transition-colors">Tự công bố sản phẩm thực phẩm</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: R&D & Applications -->
+            <div class="space-y-4">
+                <h5 class="font-bold text-sm uppercase tracking-wider text-slate-200">Nghiên Cứu & Ứng Dụng</h5>
+                <ul class="space-y-2 text-xs text-slate-400 font-semibold">
+                    <li><a href="rd.html" class="hover:text-brand-gold transition-colors">Quy trình R&D sản phẩm mới</a></li>
+                    <li><a href="rd.html" class="hover:text-brand-gold transition-colors">Gia tốc hạn sử dụng thực phẩm</a></li>
+                    <li><a href="applications.html" class="hover:text-brand-gold transition-colors">Ứng dụng nước giải khát & ép lạnh</a></li>
+                    <li><a href="applications.html" class="hover:text-brand-gold transition-colors">Giải pháp công thức sữa hạt</a></li>
+                    <li><a href="applications.html" class="hover:text-brand-gold transition-colors">Công nghệ bao gói MAP hiện đại</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Newsletter & Consult button -->
+            <div class="space-y-4">
+                <h5 class="font-bold text-sm uppercase tracking-wider text-slate-200">Yêu Cầu Hướng Dẫn</h5>
+                <p class="text-xs text-slate-400">Đăng ký để nhận thông tin cảnh báo chất lượng và tài liệu kiến thức chuyên ngành sớm nhất.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Email của bạn..." class="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-l-xl text-xs text-slate-200 focus:outline-none focus:border-brand-gold">
+                    <button class="bg-brand-emerald hover:bg-brand-gold px-4 rounded-r-xl transition duration-200 font-bold text-xs"><i class="fa-solid fa-paper-plane text-white hover:text-brand-deep"></i></button>
+                </div>
+                <button id="btn-consult-footer" class="w-full py-2.5 rounded-xl border border-dashed border-slate-600 hover:border-brand-gold hover:text-brand-gold transition-all duration-200 text-xs font-bold text-slate-400 flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-headset text-slate-400"></i>
+                    <span>Đăng ký nhận tư vấn miễn phí</span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Bottom Credits -->
+        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-500 space-y-4 md:space-y-0">
+            <p>&copy; 2026 QualiMeal Corp. Bảo lưu mọi quyền. Được phát triển kết hợp các giải pháp từ AIG, WinWinWin và VinaQuality.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-white transition-colors">Chính sách bảo mật</a>
+                <a href="#" class="hover:text-white transition-colors">Điều khoản sử dụng</a>
+                <a href="#" class="hover:text-white transition-colors">Sơ đồ trang web</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- ==========================================
+     MODALS (CHỨNG CHỈ, TÌM KIẾM, LIÊN HỆ)
+     ========================================== -->
+
+<!-- Modal 1: Tra cứu chứng chỉ -->
+<div id="modal-lookup" class="fixed inset-0 z-50 bg-brand-deep/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-xl w-full shadow-2xl overflow-hidden border border-slate-100 animate-float">
+        <!-- Modal Header -->
+        <div class="bg-brand-deep text-white px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-certificate text-brand-emerald text-lg"></i>
+                <h3 class="font-display font-extrabold text-base md:text-lg">Hệ Thống Tra Cứu Chứng Chỉ Chất Lượng</h3>
+            </div>
+            <button id="btn-close-lookup" class="text-slate-300 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <!-- Modal Body -->
+        <div class="p-6 space-y-6">
+            <p class="text-xs text-slate-500">Hệ thống cho phép đối soát các chứng nhận ISO 9001, ISO 22000, HACCP, GMP do QualiMeal cấp. Nhập mã chứng chỉ được in trên con dấu hoặc góc trái của văn bản.</p>
+            
+            <form id="form-lookup" class="space-y-4">
+                <div>
+                    <label for="input-lookup" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Nhập Mã Số Chứng Chỉ <span class="text-rose-500">*</span></label>
+                    <div class="flex space-x-2">
+                        <input type="text" id="input-lookup" required class="flex-1 px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-mono font-bold tracking-wider text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition duration-200" placeholder="Ví dụ: QM-9001-2026">
+                        <button type="submit" class="px-5 py-3 rounded-xl bg-brand-emerald hover:bg-brand-green text-white font-bold text-sm shadow-md transition duration-200 focus:outline-none">
+                            Kiểm tra
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Search Results Box -->
+            <div id="lookup-result" class="min-h-[100px] flex items-center justify-center border border-dashed border-slate-200 rounded-2xl bg-slate-50">
+                <div class="text-center p-6">
+                    <span class="block text-slate-400 text-sm font-semibold">Chưa có dữ liệu tra cứu</span>
+                    <span class="block text-[10px] text-slate-400 mt-1">Mã mẫu thử nghiệm: <strong class="font-mono text-slate-600 bg-white px-1 py-0.5 border rounded">QM-9001-2026</strong> hoặc <strong class="font-mono text-slate-600 bg-white px-1 py-0.5 border rounded">QM-22000-2026</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2: Đăng ký tư vấn nhanh -->
+<div id="modal-consult" class="fixed inset-0 z-50 bg-brand-deep/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full shadow-2xl overflow-hidden border border-slate-100">
+        <!-- Modal Header -->
+        <div class="bg-brand-deep text-white px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-headset text-brand-orange text-lg"></i>
+                <h3 class="font-display font-extrabold text-base md:text-lg">Đăng Ký Tư Vấn Chất Lượng & R&D</h3>
+            </div>
+            <button id="btn-close-consult" class="text-slate-300 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <!-- Modal Body -->
+        <div class="p-6">
+            <form id="form-consult" class="space-y-4">
+                <div>
+                    <label for="consult-name" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Họ và tên quý khách <span class="text-rose-500">*</span></label>
+                    <input type="text" id="consult-name" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition duration-200" placeholder="Nguyễn Văn A">
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="consult-phone" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Số điện thoại liên hệ <span class="text-rose-500">*</span></label>
+                        <input type="tel" id="consult-phone" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition duration-200" placeholder="0901234567">
+                    </div>
+                    <div>
+                        <label for="consult-company" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Tên doanh nghiệp / Đơn vị</label>
+                        <input type="text" id="consult-company" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition duration-200" placeholder="Công ty TNHH Thực phẩm Sạch">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="consult-service" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Dịch vụ quan tâm chính</label>
+                    <select id="consult-service" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-700 text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition duration-200">
+                        <option value="iso-all">Đánh giá & Cấp chứng nhận ISO/HACCP</option>
+                        <option value="rd-formula">Phát triển công thức thực phẩm mới (R&D)</option>
+                        <option value="testing-lab">Kiểm nghiệm & dinh dưỡng sản phẩm</option>
+                        <option value="legal-doc">Tự công bố chất lượng & Giấy phép VSATTP</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full py-3 rounded-xl bg-brand-orange hover:bg-amber-600 text-white font-bold text-sm shadow-md transition duration-200 focus:outline-none">
+                    Gửi thông tin tư vấn
+                </button>
+                <p class="text-[10px] text-slate-400 text-center mt-2">Chúng tôi bảo mật thông tin doanh nghiệp theo đúng chuẩn bảo mật ISO 27001.</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3: Tìm kiếm toàn hệ thống -->
+<div id="modal-search" class="fixed inset-0 z-50 bg-brand-deep/80 backdrop-blur-sm hidden items-start justify-center p-4 pt-16">
+    <div class="bg-white rounded-3xl max-w-xl w-full shadow-2xl overflow-hidden border border-slate-100 animate-slide-left">
+        <!-- Modal Search Input -->
+        <div class="p-4 border-b border-slate-100 flex items-center space-x-2">
+            <i class="fa-solid fa-magnifying-glass text-slate-400 text-lg ml-2"></i>
+            <input type="text" id="input-search" class="flex-1 px-2 py-3 text-slate-800 text-base focus:outline-none" placeholder="Tìm dịch vụ, tiêu chuẩn ISO, kiến thức thực phẩm...">
+            <button id="btn-close-search" class="text-slate-400 hover:text-slate-600 p-2">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+        <!-- Search Results Panel -->
+        <div class="max-h-[350px] overflow-y-auto p-4" id="search-results">
+            <p class="text-sm text-slate-400 text-center py-4">Nhập ít nhất 2 ký tự để tìm kiếm...</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

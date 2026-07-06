@@ -1,0 +1,169 @@
+<!-- ==========================================
+     6. TIN TỨC - THÔNG BÁO - KIẾN THỨC
+     ========================================== -->
+<section id="blog" class="py-16 md:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+        
+        <!-- Tab buttons navigation -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-200 pb-6 mb-12 space-y-4 md:space-y-0">
+            <div class="space-y-2">
+                <span class="text-brand-emerald font-extrabold uppercase text-xs tracking-wider">Thông Tin Tổng Hợp</span>
+                <h3 class="font-display font-extrabold text-3xl text-brand-deep">Truyền Thông & Tri Thức Thực Phẩm</h3>
+            </div>
+            
+            <div class="flex flex-wrap gap-2 md:gap-4 border-b md:border-b-0">
+                <button data-tab="news" class="tab-btn px-4 py-2 text-brand-emerald border-brand-emerald border-b-2 font-bold text-sm transition-all focus:outline-none">
+                    Tin Tức Sự Kiện
+                </button>
+                <button id="announcements" data-tab="announcements" class="tab-btn px-4 py-2 text-slate-500 font-medium text-sm transition-all focus:outline-none">
+                    Thông Báo Chính Thức
+                </button>
+                <button id="knowledge" data-tab="knowledge" class="tab-btn px-4 py-2 text-slate-500 font-medium text-sm transition-all focus:outline-none">
+                    Kiến Thức Chuyên Môn
+                </button>
+            </div>
+        </div>
+
+        <!-- Tab Content 1: Tin Tức -->
+        <div id="tab-news" class="tab-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- News Card 1 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?q=80&w=800&auto=format&fit=crop" alt="Hội nghị an toàn thực phẩm" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-emerald">Sự kiện quốc tế</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">QualiMeal Tham Gia Diễn Đàn Khoa Học Thực Phẩm Châu Á 2026</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Chia sẻ các đề tài nghiên cứu mới nhất về chiết xuất hoạt chất sinh học từ vỏ chanh leo phục vụ công nghiệp bảo quản xanh thực phẩm sạch.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>01/07/2026</span>
+                        <span>Đăng bởi: Ban Truyền Thông</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Card 2 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <img src="https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?q=80&w=800&auto=format&fit=crop" alt="Lab R&D khai trương" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-accent">Hoạt động nội bộ</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Khai Trương Phòng Lab Kiểm Nghiệm Vi Sinh Hiện Đại Tại TP. HCM</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Nâng cấp năng lực phân tích mẫu thử gấp đôi, trang bị hệ thống PCR thế hệ mới cho phép trả kết quả nhiễm khuẩn độc tố Salmonella trong 24 giờ.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>28/06/2026</span>
+                        <span>Đăng bởi: Khối Kỹ Thuật</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Card 3 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <img src="https://images.unsplash.com/photo-1607619056574-7b8d304b3b8c?q=80&w=800&auto=format&fit=crop" alt="Ký kết chứng nhận" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-gold">Hợp tác phát triển</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Ký Kết Hợp Tác R&D Toàn Diện Với Tổng Công Ty Nông Nghiệp Xanh</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Mở ra lộ trình phát triển 5 dòng thực phẩm chức năng ứng dụng nguyên liệu nông sản organic chất lượng cao đạt tiêu chuẩn USDA.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>20/06/2026</span>
+                        <span>Đăng bởi: Ban Đối Ngoại</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Tab Content 2: Thông Báo (Hidden by default) -->
+        <div id="tab-announcements" class="tab-content hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Announcement Card 1 -->
+            <article class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-64">
+                <div class="space-y-3">
+                    <span class="inline-block px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 font-bold text-[10px] uppercase tracking-wider">Thông báo khẩn</span>
+                    <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Cảnh Báo Thay Đổi Hướng Dẫn Tự Công Bố Sản Phẩm Nhập Khẩu 2026</a></h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Lưu ý cập nhật tờ khai mới theo mẫu thông tư sửa đổi bổ sung của Bộ Y Tế từ ngày 01/07/2026 để tránh bị chậm trễ thông quan.</p>
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                    <span>25/06/2026</span>
+                    <span>Phòng Pháp Lý</span>
+                </div>
+            </article>
+
+            <!-- Announcement Card 2 -->
+            <article class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-64">
+                <div class="space-y-3">
+                    <span class="inline-block px-2.5 py-0.5 rounded bg-brand-emerald/15 text-brand-green font-bold text-[10px] uppercase tracking-wider">Hành chính</span>
+                    <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Lịch Nghỉ Lễ Quốc Khánh & Lịch Trực Phòng Lab Đánh Giá</a></h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">QualiMeal trân trọng thông báo lịch nghỉ lễ chính thức và sắp xếp đội ngũ kỹ thuật viên trực phòng lab 24/7 phục vụ các mẫu kiểm nhanh.</p>
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                    <span>15/06/2026</span>
+                    <span>Ban Nhân Sự</span>
+                </div>
+            </article>
+
+            <!-- Announcement Card 3 -->
+            <article class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-64">
+                <div class="space-y-3">
+                    <span class="inline-block px-2.5 py-0.5 rounded bg-blue-50 text-blue-600 font-bold text-[10px] uppercase tracking-wider">Chứng nhận</span>
+                    <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Công Bố Cập Nhật Mẫu Phôi Chứng Chỉ ISO Tích Hợp QR Tra Cứu</a></h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Kể từ ngày 15/06/2026, toàn bộ chứng chỉ ISO 22000, HACCP do QualiMeal cấp sẽ tích hợp QR Code liên kết trực tiếp hệ thống đối soát dữ liệu.</p>
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                    <span>12/06/2026</span>
+                    <span>Khối Chứng Nhận</span>
+                </div>
+            </article>
+        </div>
+
+        <!-- Tab Content 3: Kiến Thức (Hidden by default) -->
+        <div id="tab-knowledge" class="tab-content hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Knowledge Card 1 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-emerald">Tiêu chuẩn ISO</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">ISO 22000 và HACCP Khác Nhau Như Thế Nào?</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Phân tích chuyên sâu điểm tương đồng và khác biệt giữa 2 tiêu chuẩn. Giúp doanh nghiệp chọn đúng tiêu chuẩn phù hợp với năng lực sản xuất hiện tại.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>10 phút đọc</span>
+                        <span>Tác giả: GS. Nguyễn Văn An</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Knowledge Card 2 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-accent">Hóa học thực phẩm</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Giải Pháp Kéo Dài Hạn Sử Dụng Thực Phẩm Bằng Công Nghệ Bao Gói Khí Biến Tính MAP</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Giải pháp bảo quản tối ưu cho các sản phẩm thịt tươi sống và rau xanh xuất khẩu không dùng chất bảo quản hóa học.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>15 phút đọc</span>
+                        <span>Tác giả: TS. Lê Mai Chi (R&D)</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Knowledge Card 3 -->
+            <article class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-brand-gold">HACCP</span>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug hover:text-brand-emerald transition-colors duration-150"><a href="#">Cách Xác Định Điểm Kiểm Soát Tới Hạn (CCP) Trong Dây Chuyền Sữa Tiệt Trùng</a></h4>
+                        <p class="text-xs text-slate-500 line-clamp-3">Hướng dẫn từng bước sử dụng cây quyết định (decision tree) để thiết lập và giám sát các điểm CCP quan trọng nhất.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 pt-4 border-t border-slate-100">
+                        <span>12 phút đọc</span>
+                        <span>Tác giả: Kiểm toán viên Trần Quốc Việt</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </div>
+</section>

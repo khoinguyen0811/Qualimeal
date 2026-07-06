@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức & Kiến Thức Chuyên Ngành Thực Phẩm - QualiMeal</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Cập nhật tin tức an toàn thực phẩm, kiến thức kỹ thuật R&D, tiêu chuẩn chất lượng ISO 22000, HACCP mới nhất từ chuyên gia QualiMeal.">
+    <meta name="keywords" content="tin tức an toàn thực phẩm, kiến thức ISO, kỹ thuật R&D">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preconnect and Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- Custom & Root Color CSS -->
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#142213',       /* Deep Forest Green */
+                            green: '#5d6837',      /* Olive/Sage Green */
+                            emerald: '#658568',    /* Medium Sage Green */
+                            gold: '#cda069',       /* Ochre Gold */
+                            beige: '#f5f3ef',      /* Warm Sand/Beige */
+                            orange: '#d97706',     /* Warm Amber */
+                            light: '#faf8f5'       /* Warm White */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Iosevka Charon"', 'sans-serif'],
+                        display: ['"Roboto Condensed"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Deferred Interactivity Logic -->
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-brand-beige text-[#2d3527] font-sans antialiased overflow-x-hidden" data-page="blog">
+
+    <!-- INCLUDE components/header.html -->
+
+
+
+    <!-- Page Title Banner -->
+    <div class="bg-brand-deep text-white py-12 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('assets/banners/banner10.jpg');"></div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+            <h1 class="font-display font-extrabold text-3xl md:text-4xl text-brand-gold">Tin Tức & Kiến Thức</h1>
+            <p class="text-sm text-slate-300 max-w-lg mx-auto">Kiến thức chuyên môn, thông cáo pháp luật và tin tức sự kiện nổi bật của QualiMeal.</p>
+        </div>
+    </div>
+
+    <!-- INCLUDE components/blog.html -->
+
+    <!-- INCLUDE components/footer.html -->
+
+    <!-- INCLUDE components/modals.html -->
+
+</body>
+</html>

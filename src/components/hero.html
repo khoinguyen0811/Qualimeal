@@ -1,0 +1,51 @@
+<!-- ==========================================
+     1. HERO SECTION (SLIDER CAROUSEL USING NEW BANNERS)
+     ========================================== -->
+<section id="home" class="relative h-[550px] md:h-[650px] bg-brand-deep overflow-hidden group">
+    <!-- Slide 1: Laboratory & Testing -->
+    <div class="slide-item absolute inset-0 bg-cover bg-center active" style="background-image: url('assets/banners/banner1.jpg');"></div>
+
+    <!-- Slide 2: R&D & Formulation -->
+    <div class="slide-item absolute inset-0 bg-cover bg-center" style="background-image: url('assets/banners/banner2.jpg');"></div>
+
+    <!-- Slide 3: Certification & ISO -->
+    <div class="slide-item absolute inset-0 bg-cover bg-center" style="background-image: url('assets/banners/banner6.jpg');"></div>
+
+    <!-- Slider Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-deep/80 via-brand-deep/40 to-transparent z-10"></div>
+
+    <!-- Hero Content Overlay (Text content can sit here for visual excellence) -->
+    <div class="absolute inset-0 z-20 flex items-center px-6 md:px-12 lg:px-24">
+        <div class="max-w-2xl text-white space-y-6">
+            <div class="inline-flex items-center space-x-2 bg-brand-gold/20 text-brand-gold px-3.5 py-1.5 rounded-full border border-brand-gold/30">
+                <span class="w-1.5 h-1.5 bg-brand-gold rounded-full animate-ping"></span>
+                <span class="text-[10px] md:text-xs font-bold uppercase tracking-widest">Trung tâm Nghiên cứu Khoa học & Chứng nhận</span>
+            </div>
+            <h1 class="font-display font-extrabold text-4xl md:text-5xl lg:text-6xl text-white leading-tight drop-shadow-md">
+                Giải Pháp <span class="text-brand-gold">R&D Trọn Gói</span> & Chứng Nhận ISO Thực Phẩm
+            </h1>
+            <p class="text-slate-300 text-sm md:text-base max-w-lg leading-relaxed drop-shadow">
+                Tích hợp toàn diện từ thiết lập công thức sản xuất, kiểm định vi sinh chuẩn ISO 17025 đến cấp chứng nhận ISO 22000, HACCP phục vụ xuất khẩu toàn cầu.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="services.html" class="px-6 py-3.5 bg-brand-gold hover:bg-amber-600 text-brand-deep hover:text-white font-bold text-xs md:text-sm rounded-xl shadow-lg transition duration-200">
+                    <i class="fa-solid fa-microscope mr-2"></i>Xem Dịch Vụ
+                </a>
+                <a href="contact.html" class="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-bold text-xs md:text-sm rounded-xl shadow-lg border border-white/20 transition duration-200">
+                    <i class="fa-solid fa-headset mr-2"></i>Đăng Ký Tư Vấn
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <button id="slide-prev" class="absolute left-4 top-1/2 -translate-y-1/2 -translate-x-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-x-0 transition-all duration-300 z-20 w-12 h-12 rounded-full bg-black/35 hover:bg-brand-gold text-white flex items-center justify-center focus:outline-none" aria-label="Previous Slide">
+        <i class="fa-solid fa-chevron-left text-lg"></i>
+    </button>
+    <button id="slide-next" class="absolute right-4 top-1/2 -translate-y-1/2 translate-x-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-x-0 transition-all duration-300 z-20 w-12 h-12 rounded-full bg-black/35 hover:bg-brand-gold text-white flex items-center justify-center focus:outline-none" aria-label="Next Slide">
+        <i class="fa-solid fa-chevron-right text-lg"></i>
+    </button>
+
+    <!-- Slider Indicators -->
+    <div id="slide-indicators" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-25 flex space-x-3"></div>
+</section>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nghiên Cứu & Phát Triển Sản Phẩm (R&D) - QualiMeal</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Trung tâm nghiên cứu phát triển R&D QualiMeal giúp tối ưu hóa công thức thực phẩm, gia tốc hạn sử dụng sản phẩm và chuyển giao công nghệ quy mô công nghiệp.">
+    <meta name="keywords" content="R&D thực phẩm, phát triển sản phẩm mới, chuyển giao công nghệ thực phẩm">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preconnect and Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- Custom & Root Color CSS -->
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#142213',       /* Deep Forest Green */
+                            green: '#5d6837',      /* Olive/Sage Green */
+                            emerald: '#658568',    /* Medium Sage Green */
+                            gold: '#cda069',       /* Ochre Gold */
+                            beige: '#f5f3ef',      /* Warm Sand/Beige */
+                            orange: '#d97706',     /* Warm Amber */
+                            light: '#faf8f5'       /* Warm White */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Iosevka Charon"', 'sans-serif'],
+                        display: ['"Roboto Condensed"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Deferred Interactivity Logic -->
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-brand-beige text-[#2d3527] font-sans antialiased overflow-x-hidden" data-page="rd">
+
+    <!-- INCLUDE components/header.html -->
+
+
+
+    <!-- Page Title Banner -->
+    <div class="bg-brand-deep text-white py-12 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('assets/banners/banner2.jpg');"></div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+            <h1 class="font-display font-extrabold text-3xl md:text-4xl text-brand-gold">Nghiên Cứu & Phát Triển (R&D)</h1>
+            <p class="text-sm text-slate-300 max-w-lg mx-auto">Chuyển giao giải pháp kỹ thuật, tối ưu hóa công thức sản xuất thực phẩm quy mô lớn.</p>
+        </div>
+    </div>
+
+    <!-- INCLUDE components/rd.html -->
+
+    <!-- Extra Lab Capacity Section -->
+    <section class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="font-display font-extrabold text-2xl text-brand-deep mb-4">Năng lực Phòng R&D Thí Nghiệm</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Chúng tôi trang bị các hệ thống thiết bị pilot hiện đại giả lập hoàn hảo dây chuyền nhà máy thực tế. Giúp tối thiểu hóa rủi ro và chi phí khi chuyển giao công thức từ phòng thí nghiệm ra sản xuất quy mô công nghiệp.
+                    </p>
+                    <ul class="space-y-2 text-xs font-bold text-slate-700">
+                        <li><i class="fa-solid fa-circle-check text-brand-gold mr-2"></i> Hệ thống thanh trùng UHT thu nhỏ</li>
+                        <li><i class="fa-solid fa-circle-check text-brand-gold mr-2"></i> Máy đồng hóa áp suất cao</li>
+                        <li><i class="fa-solid fa-circle-check text-brand-gold mr-2"></i> Tủ vi khí hậu gia tốc lão hóa mẫu</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/banners/banner8.jpg" alt="Phòng Thí Nghiệm R&D" class="rounded-3xl shadow-xl w-full h-[280px] object-cover border border-slate-200">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INCLUDE components/footer.html -->
+
+    <!-- INCLUDE components/modals.html -->
+
+</body>
+</html>
