@@ -358,9 +358,8 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -10px;
     left: 0;
     right: -2000px; /* extends all the way to the screen right edge */
-    background-color: var(--color-primary-orange); /* Cam #E05315 */
+    background-color: #c82d1f; /* Primary Red (#c82d1f) */
     transform: skewX(-25deg);
     transform-origin: top left;
     z-index: -1;
 }
-
