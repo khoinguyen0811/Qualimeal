@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (stickyNavbar) {
         if (pageId) {
             stickyNavbar.querySelectorAll(`[data-page="${pageId}"]`).forEach(link => {
-                link.classList.add('text-brand-deep', 'border-brand-deep');
+                link.classList.add('text-brand-gold', 'border-brand-gold');
                 link.classList.remove('border-transparent');
             });
         }
