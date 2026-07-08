@@ -28,3 +28,9 @@ This document details the visual updates, animations, and branding alignment com
   - Zalo (Blue Zalo styling)
   - Hotline (Red circle with a glowing pulse animation)
 - These buttons hover with subtle lifts and display tooltips.
+
+### 6. Cập nhật thông tin trang giới thiệu Về chúng tôi
+- Thay đổi thông tin giới thiệu tại phần đầu tiên của trang Về chúng tôi (`src/components/about.html`) về quy trình nghiên cứu, R&D và chất lượng sản phẩm.
+- Cập nhật chi tiết 3 mục "Khoa Học", "Giải Pháp Thực Phẩm", "Chất Lượng" vào các thẻ hiển thị tương ứng trong mục Ba trụ cột (`src/components/about.html`) và các ô Panel có hiệu ứng backdrop-blur của section Dịch vụ đặc trưng Accordion (`src/components/interactive_accordion.html`).
+- Di chuyển phần lời tri ân, cảm ơn của QualiMeal xuống khu vực Sứ mệnh ở cuối trang giới thiệu (`src/about.html`) và đổi tên thành "Lời Tri Ân từ QualiMeal".
+- Thực hiện chạy compile lại toàn bộ giao diện HTML thông qua `node build.js`.
