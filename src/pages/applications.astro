@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Applications from '../components/Applications.astro';
+import Footer from '../components/Footer.astro';
+import Modals from '../components/Modals.astro';
+---
+
+<BaseLayout
+  title="Ứng Dụng Thực Tế Ngành Hàng Thực Phẩm - QualiMeal"
+  description="Các giải pháp ứng dụng công nghệ của QualiMeal trong sản xuất nước giải khát, sữa hạt, thực phẩm bảo vệ sức khỏe và nước sốt gia vị đóng chai."
+  keywords="ứng dụng công nghệ thực phẩm, sữa hạt dinh dưỡng, nước giải khát HPP"
+  page="applications"
+>
+  <Header />
+
+  <!-- Page Title Banner -->
+  <div class="bg-slate-900 text-white py-12 px-6 relative overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('/assets/banners/banner9.jpg');"></div>
+      <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+          <h1 class="font-display font-extrabold text-3xl md:text-4xl text-white">Ứng Dụng Thực Tế</h1>
+          <p class="text-sm text-slate-300 max-w-lg mx-auto">Chuyển giao và thương mại hóa thành công công thức thực phẩm tại Việt Nam.</p>
+      </div>
+  </div>
+
+  <Applications />
+
+  <!-- Extra Application Success Showcase -->
+  <section class="py-12 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <div class="bg-brand-beige rounded-3xl p-8 border border-slate-200/50 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div>
+                  <h4 class="font-display font-bold text-lg text-brand-deep">Bạn muốn thử nghiệm sản phẩm mẫu cảm quan?</h4>
+                  <p class="text-xs text-slate-500 mt-1">Liên hệ để đăng ký nhận mẫu thử nghiệm miễn phí các dòng sản phẩm R&D độc quyền từ QualiMeal.</p>
+              </div>
+              <a href="contact.html" class="px-5 py-3 bg-brand-gold hover:bg-brand-emerald text-white font-bold text-xs md:text-sm rounded-xl shadow-md transition-colors">
+                  Đăng Ký Nhận Mẫu Thử
+              </a>
+          </div>
+      </div>
+  </section>
+
+  <Footer />
+  <Modals />
+</BaseLayout>

@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Modals from '../components/Modals.astro';
+---
+
+<BaseLayout
+  title="Điều Khoản Sử Dụng - QualiMeal"
+  description="Điều khoản sử dụng dịch vụ tại QualiMeal - Quy định, quyền lợi và nghĩa vụ của khách hàng khi đăng ký tư vấn ISO, R&D thực phẩm."
+  keywords="điều khoản sử dụng, chính sách QualiMeal, quy định sử dụng"
+  page="terms"
+>
+  <Header />
+
+  <!-- Page Title Banner -->
+  <div class="bg-slate-900 text-white py-16 px-6 relative overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('/assets/banners/banner4.jpg');"></div>
+      <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+          <h1 class="font-display font-extrabold text-3xl md:text-4xl text-white">Điều Khoản Sử Dụng</h1>
+          <p class="text-sm text-slate-300 max-w-lg mx-auto">Vui lòng đọc kỹ các điều khoản dưới đây trước khi trải nghiệm dịch vụ của QualiMeal.</p>
+      </div>
+  </div>
+
+  <!-- Content Section -->
+  <main class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-6 md:px-8">
+          <div class="prose max-w-none text-slate-600 text-sm space-y-8 leading-relaxed">
+              <div>
+                  <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                      <i class="fa-solid fa-file-contract mr-2 text-brand-emerald"></i> 1. Chấp thuận các điều khoản
+                  </h2>
+                  <p class="mb-3">Bằng việc truy cập và sử dụng website QualiMeal (qualimeal.vn) hoặc đăng ký sử dụng các dịch vụ tư vấn ISO, R&D thực phẩm của chúng tôi, quý khách hàng được coi là đã đồng ý và tuân thủ các điều khoản sử dụng được quy định tại đây.</p>
+                  <p>If quý khách không đồng ý với bất kỳ điều khoản nào, vui lòng dừng truy cập website và ngừng đăng ký dịch vụ của chúng tôi.</p>
+              </div>
+
+              <div>
+                  <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                      <i class="fa-solid fa-copyright mr-2 text-brand-emerald"></i> 2. Quyền sở hữu trí tuệ
+                  </h2>
+                  <p class="mb-3">Toàn bộ nội dung trên website bao gồm hình ảnh, logo, tài liệu hướng dẫn, quy trình công nghệ, các công thức phát triển sản phẩm R&D và mã nguồn đều thuộc quyền sở hữu trí tuệ của QualiMeal hoặc được cấp phép hợp pháp cho chúng tôi sử dụng.</p>
+                  <p>Mọi hành vi sao chép, phân phối, xuất bản hoặc sử dụng thương mại mà không có sự đồng ý bằng văn bản của QualiMeal đều bị nghiêm cấm.</p>
+              </div>
+
+              <div>
+                  <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                      <i class="fa-solid fa-clipboard-check mr-2 text-brand-emerald"></i> 3. Điều kiện sử dụng dịch vụ
+                  </h2>
+                  <p class="mb-3">Khi sử dụng dịch vụ tư vấn và kiểm nghiệm của chúng tôi, khách hàng cam kết cung cấp thông tin chính xác, trung thực về sản phẩm và doanh nghiệp của mình. Khách hàng chịu trách nhiệm hoàn toàn về tính pháp lý và bản quyền của các mẫu sản phẩm gửi đến cho QualiMeal để thực hiện thử nghiệm hoặc gia tốc hạn sử dụng thực phẩm.</p>
+                  <p>QualiMeal có quyền từ chối cung cấp dịch vụ đối với các sản phẩm có dấu hiệu vi phạm pháp luật hoặc không đảm bảo an toàn sinh học cơ bản.</p>
+              </div>
+
+              <div>
+                  <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                      <i class="fa-solid fa-user-shield mr-2 text-brand-emerald"></i> 4. Quyền và trách nhiệm của QualiMeal
+                  </h2>
+                  <ul class="list-disc pl-5 space-y-2">
+                      <li>Cung cấp dịch vụ đúng chất lượng, tiến độ và quy trình đã thỏa thuận trong hợp đồng dịch vụ.</li>
+                      <li>Đảm bảo tính bảo mật đối với các công thức R&D, dữ liệu kiểm nghiệm và thông tin nội bộ của khách hàng.</li>
+                      <li>Có quyền cập nhật, thay đổi bảng giá, các điều khoản sử dụng này tại bất kỳ thời điểm nào mà không cần báo trước.</li>
+                  </ul>
+              </div>
+
+              <div>
+                  <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                      <i class="fa-solid fa-ban mr-2 text-brand-emerald"></i> 5. Giới hạn trách nhiệm
+                  </h2>
+                  <p class="mb-3">QualiMeal nỗ lực tối đa để đảm bảo tính chính xác của các kết quả phân tích và tư vấn pháp lý. Tuy nhiên, các khuyến nghị R&D và tư vấn tiêu chuẩn ISO mang tính chất hỗ trợ chuyên môn, quyết định áp dụng cuối cùng và kết quả sản xuất thực tế thuộc về phía doanh nghiệp sử dụng dịch vụ.</p>
+                  <p>Chúng tôi không chịu trách nhiệm cho bất kỳ thiệt hại trực tiếp hay gián tiếp nào phát sinh từ việc vận hành sản xuất thực tế của khách hàng.</p>
+              </div>
+
+              <div>
+                  <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                      <i class="fa-solid fa-gavel mr-2 text-brand-emerald"></i> 6. Luật áp dụng và giải quyết tranh chấp
+                  </h2>
+                  <p>Các điều khoản sử dụng này được điều chỉnh và giải thích theo quy định của pháp luật nước Cộng hòa Xã hội Chủ nghĩa Việt Nam. Mọi tranh chấp phát sinh từ hoặc liên quan đến việc sử dụng dịch vụ sẽ được ưu tiên giải quyết thông qua thương lượng. Trong trường hợp không đạt được thỏa thuận chung, tranh chấp sẽ được đưa ra giải quyết tại Tòa án có thẩm quyền tại TP. Hồ Chí Minh.</p>
+              </div>
+          </div>
+      </div>
+  </main>
+
+  <Footer />
+  <Modals />
+</BaseLayout>

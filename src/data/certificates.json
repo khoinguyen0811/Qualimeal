@@ -1,0 +1,42 @@
+{
+  "QM-9001-2026": {
+    "id": "QM-9001-2026",
+    "company": "Công ty Cổ phần Nguyên liệu Á Châu AIG",
+    "standard": "ISO 9001:2015",
+    "scope": "Sản xuất và phân phối nguyên liệu thực phẩm, thực phẩm đóng gói.",
+    "issueDate": "15/01/2026",
+    "expiryDate": "14/01/2029",
+    "status": "Đang hiệu lực",
+    "authority": "Trung tâm Chứng nhận Chất lượng QualiMeal"
+  },
+  "QM-22000-2026": {
+    "id": "QM-22000-2026",
+    "company": "Tập đoàn Thực phẩm WinWinWin",
+    "standard": "ISO 22000:2018",
+    "scope": "Chế biến và đóng gói các sản phẩm từ nông sản và thủy hải sản xuất khẩu.",
+    "issueDate": "20/02/2026",
+    "expiryDate": "19/02/2029",
+    "status": "Đang hiệu lực",
+    "authority": "Trung tâm Chứng nhận Chất lượng QualiMeal"
+  },
+  "QM-HACCP-2026": {
+    "id": "QM-HACCP-2026",
+    "company": "Hợp tác xã Chế biến Thực phẩm Sạch VinaQuality",
+    "standard": "HACCP CODEX 2020",
+    "scope": "Quy trình sơ chế, chế biến rau quả tươi và các loại thịt đóng khay đông lạnh.",
+    "issueDate": "05/03/2026",
+    "expiryDate": "04/03/2029",
+    "status": "Đang hiệu lực",
+    "authority": "Trung tâm Chứng nhận Chất lượng QualiMeal"
+  },
+  "QM-14001-2026": {
+    "id": "QM-14001-2026",
+    "company": "Tổng công ty Sản xuất Bao bì Thực phẩm Asia Pack",
+    "standard": "ISO 14001:2015",
+    "scope": "Sản xuất bao bì tự hủy sinh học và màng bọc thực phẩm an toàn.",
+    "issueDate": "12/04/2026",
+    "expiryDate": "11/04/2029",
+    "status": "Đang hiệu lực",
+    "authority": "Trung tâm Chứng nhận Chất lượng QualiMeal"
+  }
+}

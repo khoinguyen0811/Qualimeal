@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Services from '../components/Services.astro';
+import Footer from '../components/Footer.astro';
+import Modals from '../components/Modals.astro';
+---
+
+<BaseLayout
+  title="Dịch Vụ Khoa Học Công Nghệ & Chứng Nhận ISO - QualiMeal"
+  description="Khám phá các dịch vụ của QualiMeal: Chứng nhận ISO 22000, HACCP, kiểm nghiệm sản phẩm chuẩn ISO 17025, tự công bố và đăng ký mã vạch xuất khẩu."
+  keywords="chứng nhận ISO 22000, HACCP, kiểm nghiệm thực phẩm, đăng ký FDA"
+  page="services"
+>
+  <Header />
+
+  <!-- Page Title Banner -->
+  <div class="bg-slate-900 text-white py-12 px-6 relative overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('/assets/banners/banner4.jpg');"></div>
+      <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+          <h1 class="font-display font-extrabold text-3xl md:text-4xl text-white">Dịch Vụ Khoa Học Công Nghệ</h1>
+          <p class="text-sm text-slate-300 max-w-lg mx-auto">Kiểm định chuẩn mực, đánh giá chuyên sâu và giải pháp pháp lý toàn diện cho doanh nghiệp thực phẩm.</p>
+      </div>
+  </div>
+
+  <Services />
+
+  <!-- Extra CTA for Custom Service Inquiry -->
+  <section class="py-12 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 md:px-8 text-center space-y-6">
+          <h3 class="font-display font-extrabold text-2xl text-brand-deep">Bạn cần giải pháp tư vấn tiêu chuẩn chuyên sâu khác?</h3>
+          <p class="text-slate-600 text-sm max-w-xl mx-auto">
+              Đội ngũ kiểm toán viên và chuyên gia pháp lý của chúng tôi sẵn sàng thiết kế lộ trình chuẩn hóa riêng biệt cho mô hình nhà xưởng của bạn.
+          </p>
+          <div class="flex justify-center space-x-4">
+              <button id="btn-consult-footer" class="px-6 py-3 bg-brand-gold hover:bg-brand-emerald text-white font-bold text-sm rounded-xl shadow-md transition-all duration-200">
+                  Yêu Cầu Tư Vấn Ngay
+              </button>
+          </div>
+      </div>
+  </section>
+
+  <Footer />
+  <Modals />
+</BaseLayout>

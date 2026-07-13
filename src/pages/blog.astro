@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Blog from '../components/Blog.astro';
+import Footer from '../components/Footer.astro';
+import Modals from '../components/Modals.astro';
+---
+
+<BaseLayout
+  title="Tin Tức & Kiến Thức Chuyên Ngành Thực Phẩm - QualiMeal"
+  description="Cập nhật tin tức an toàn thực phẩm, kiến thức kỹ thuật R&D, tiêu chuẩn chất lượng ISO 22000, HACCP mới nhất từ chuyên gia QualiMeal."
+  keywords="tin tức an toàn thực phẩm, kiến thức ISO, kỹ thuật R&D"
+  page="blog"
+>
+  <Header />
+
+  <!-- Page Title Banner -->
+  <div class="bg-slate-900 text-white py-12 px-6 relative overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('/assets/banners/banner10.jpg');"></div>
+      <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+          <h1 class="font-display font-extrabold text-3xl md:text-4xl text-white">Tin Tức & Kiến Thức</h1>
+          <p class="text-sm text-slate-300 max-w-lg mx-auto">Kiến thức chuyên môn, thông cáo pháp luật và tin tức sự kiện nổi bật của QualiMeal.</p>
+      </div>
+  </div>
+
+  <Blog />
+
+  <Footer />
+  <Modals />
+</BaseLayout>

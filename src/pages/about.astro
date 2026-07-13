@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import About from '../components/About.astro';
+import InteractiveAccordion from '../components/InteractiveAccordion.astro';
+import Footer from '../components/Footer.astro';
+import Modals from '../components/Modals.astro';
+---
+
+<BaseLayout
+  title="Giới Thiệu Về Chúng Tôi - QualiMeal"
+  description="Tìm hiểu về QualiMeal - Đơn vị đối tác khoa học công nghệ thực phẩm, phòng R&D chuyên nghiệp và chứng nhận ISO 22000, HACCP uy tín tại Việt Nam."
+  keywords="Giới thiệu QualiMeal, đội ngũ chuyên gia, đối tác khoa học thực phẩm"
+  page="about"
+>
+  <Header />
+
+  <!-- Page Title Banner -->
+  <div class="bg-slate-900 text-white py-12 px-6 relative overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('/assets/banners/banner5.jpg');"></div>
+      <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+          <h1 class="font-display font-extrabold text-3xl md:text-4xl text-white">Về Chúng Tôi</h1>
+          <p class="text-sm text-slate-300 max-w-lg mx-auto">Hành trình mang khoa học thực tiễn đến với chuỗi giá trị nông sản thực phẩm Việt Nam.</p>
+      </div>
+  </div>
+
+  <About />
+
+  <InteractiveAccordion />
+
+  <!-- Extra About Info Card (for a premium multi-page feel) -->
+  <section class="py-12 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <div class="bg-brand-beige rounded-3xl p-8 md:p-12 border border-slate-200/50 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-8 space-y-4">
+                  <h3 class="font-display font-extrabold text-2xl text-brand-deep">Lời Tri Ân từ QualiMeal</h3>
+                  <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                      QualiMeal rất biết ơn sự quan tâm của khách hàng đã tin tưởng và đồng hành. Chúng tôi luôn nổ lực hết mình để sản phẩm dịch vụ, hàng hóa được đảm bảo và phục vụ được khách hàng tốt hơn.
+                  </p>
+              </div>
+              <div class="lg:col-span-4 flex justify-start lg:justify-end">
+                  <a href="contact.html" class="px-6 py-3.5 bg-brand-deep hover:bg-brand-green text-white font-bold text-sm rounded-xl shadow-lg transition-all duration-200">
+                      Đặt lịch làm việc ngay
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <Footer />
+  <Modals />
+</BaseLayout>
