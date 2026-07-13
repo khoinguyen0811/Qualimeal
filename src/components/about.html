@@ -1,5 +1,5 @@
 <!-- ==========================================
-     2. GIỚI THIỆU (ABOUT US SECTION WITH BUBBLE COLLAGE)
+     2. GIỚI THIỆU (ABOUT US SECTION)
      ========================================== -->
 <section id="about" class="py-16 md:py-24 bg-white relative overflow-hidden">
     <!-- Decorative background elements -->
@@ -7,7 +7,7 @@
     <div class="absolute bottom-1/4 -right-20 w-90 h-90 bg-brand-emerald/5 rounded-full mix-blend-multiply filter blur-3xl opacity-60"></div>
     
     <div class="max-w-7xl mx-auto px-6 md:px-8 relative">
-        <!-- Top part: Text & Bubble Collage -->
+        <!-- Top part: Text & Image -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             
             <!-- Left text content -->
@@ -23,61 +23,77 @@
                     Đi từ thực tiễn nghiên cứu và phát triển sản phẩm, thiết lập qui trình sản xuất và ứng dụng thực tế sản xuất ra sản phẩm đến hoàn thiện. Sản phẩm được xây dựng tiêu chuẩn và công bố cũng như các yêu cầu liên quan để đáp ứng được chất lượng, hành lang pháp lý trước khi lưu thông trên thị trường.
                 </p>
                 <p class="text-slate-600 leading-relaxed text-sm md:text-base">
-                    <strong>QualiMeal</strong> hiểu rõ được tầm quan trọng của chất lượng cũng như sự khó khăn của nhà sản xuất, kinh doanh và sự an tâm tâm của khách hàng. Qua đó chúng tôi luôn nổ lực để kết hợp giữa Khoa học – Chất lượng – Giải pháp thực phẩm luôn được phù hợp và hài hòa với nhau.
+                    <strong>Qualimeals</strong> hiểu rõ được tầm quan trọng của chất lượng cũng như sự khó khăn của nhà sản xuất, kinh doanh và sự an tâm tâm của khách hàng. Qua đó chúng tôi luôn nổ lực để kết hợp giữa Khoa học – Chất lượng – Giải pháp thực phẩm luôn được phù hợp và hài hòa với nhau.
+                </p>
+
+                <!-- FAQ Dropdowns / Accordion -->
+                <div class="mt-8 space-y-4">
+                    <!-- Accordion Item 1: Khoa học -->
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden bg-slate-50/60 transition-all duration-300">
+                        <button class="about-faq-toggle w-full px-5 py-4 flex items-center justify-between text-left font-bold text-slate-800 hover:text-brand-deep focus:outline-none" data-target="about-faq-khoahoc">
+                            <span class="flex items-center text-sm md:text-base font-display text-brand-deep">
+                                <i class="fa-solid fa-microscope text-brand-emerald mr-3 text-lg"></i>
+                                Khoa học
+                            </span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 transform text-slate-400"></i>
+                        </button>
+                        <div id="about-faq-khoahoc" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="px-5 pb-5 pt-1 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-200/40">
+                                Sản phẩm, dịch vụ được xây dựng dựa trên cơ sở nghiên cứu R&D, xây dựng qui trình công nghệ…, các giải pháp cải tiến qui trình ở các công đoạn luôn được vận hành một cách khoa học và phù hợp.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2: Giải pháp thực phẩm -->
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden bg-slate-50/60 transition-all duration-300">
+                        <button class="about-faq-toggle w-full px-5 py-4 flex items-center justify-between text-left font-bold text-slate-800 hover:text-brand-deep focus:outline-none" data-target="about-faq-giaiphap">
+                            <span class="flex items-center text-sm md:text-base font-display text-brand-deep">
+                                <i class="fa-solid fa-bowl-food text-brand-emerald mr-3 text-lg"></i>
+                                Giải pháp thực phẩm
+                            </span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 transform text-slate-400"></i>
+                        </button>
+                        <div id="about-faq-giaiphap" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="px-5 pb-5 pt-1 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-200/40">
+                                Các qui trình công nghệ, chính sách được hành động đồng bộ và phù hợp để đảm bảo sự an toàn, chất lượng và tối ưu hóa chuỗi cung ứng từ khâu nuôi trồng, nghiên cứu R&D, chế biến đến khi đến tay người tiêu dùng.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3: Chất lượng -->
+                    <div class="border border-slate-100 rounded-2xl overflow-hidden bg-slate-50/60 transition-all duration-300">
+                        <button class="about-faq-toggle w-full px-5 py-4 flex items-center justify-between text-left font-bold text-slate-800 hover:text-brand-deep focus:outline-none" data-target="about-faq-chatluong">
+                            <span class="flex items-center text-sm md:text-base font-display text-brand-deep">
+                                <i class="fa-solid fa-award text-brand-emerald mr-3 text-lg"></i>
+                                Chất lượng
+                            </span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 transform text-slate-400"></i>
+                        </button>
+                        <div id="about-faq-chatluong" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="px-5 pb-5 pt-1 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-200/40">
+                                Chất lượng không chỉ là thỏa mãn nhu cầu mong đợi hay sự thừa nhận của người sử dụng về sản phẩm, dịch vụ. Chất lượng còn là mức độ phù hợp với các yêu cầu đề ra. Sản phẩm, dịch vụ từ mức độ nghiên cứu khoa học, chuỗi cung ứng, chế biến, đến hoàn hiện, các giải pháp xây dựng hay cải tiến cũng cần đáp ứng được các tiêu chuẩn kỹ thuật, TCVN, QCVN…, đồng thời đáp ứng đúng các qui định về phát luật hiện hành. Từ đó mang lại nhiều giá trị sử dụng tích cực cho người sử dụng.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base pt-2">
+                    <strong>Qualimeals</strong> rất biết ơn sự quan tâm của khách hàng đã tin tưởng và đồng hành. Chúng tôi luôn nổ lực hết mình để sản phẩm dịch vụ, hàng hóa được đảm bảo và phục vụ được khách hàng tốt hơn.
                 </p>
             </div>
             
-            <!-- Right image bubble collage (recreating user reference layout) -->
-            <div class="lg:col-span-6 relative h-[360px] md:h-[480px] w-full">
-                <!-- Dot pattern 1 (Top Left) -->
-                <div class="absolute -top-4 left-4 w-16 h-16 text-brand-emerald/20 z-0">
-                    <svg width="64" height="64" fill="currentColor" viewBox="0 0 100 100">
-                        <pattern id="dot-grid-1" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
-                            <circle cx="4" cy="4" r="2" />
-                        </pattern>
-                        <rect width="100" height="100" fill="url(#dot-grid-1)" />
-                    </svg>
-                </div>
+            <!-- Right single image container -->
+            <div class="lg:col-span-6 flex justify-center items-center relative">
+                <!-- Aesthetic background glow/decorations -->
+                <div class="absolute -top-6 -right-6 w-32 h-32 bg-brand-gold/15 rounded-full blur-2xl"></div>
+                <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-brand-emerald/10 rounded-full blur-2xl"></div>
                 
-                <!-- Dot pattern 2 (Middle Left) -->
-                <div class="absolute top-[35%] -left-4 w-24 h-24 text-slate-200 z-0">
-                    <svg width="96" height="96" fill="currentColor" viewBox="0 0 100 100">
-                        <pattern id="dot-grid-2" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
-                            <circle cx="4" cy="4" r="2" />
-                        </pattern>
-                        <rect width="100" height="100" fill="url(#dot-grid-2)" />
-                    </svg>
-                </div>
-
-                <!-- Main Circle (Right) - scientist lab image -->
-                <div class="absolute right-0 top-[20px] w-[210px] h-[210px] md:w-[320px] md:h-[320px] rounded-full border-[6px] md:border-[8px] border-brand-gold overflow-hidden shadow-2xl z-20 hover:scale-105 transition-transform duration-300 group">
-                    <img src="assets/banners/banner3.jpg" alt="Phòng R&D QualiMeal" class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Top-Left Circle - packaging/conveyor line -->
-                <div class="absolute left-[20px] top-0 w-[110px] h-[110px] md:w-[180px] md:h-[180px] rounded-full overflow-hidden shadow-lg border-2 md:border-4 border-white z-10 hover:scale-105 transition-transform duration-300 group">
-                    <img src="assets/banners/banner1.jpg" alt="Quy trình sản xuất" class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Middle Circle - ingredients beaker/jars -->
-                <div class="absolute left-[100px] top-[100px] md:left-[170px] md:top-[150px] w-[90px] h-[90px] md:w-[145px] md:h-[145px] rounded-full overflow-hidden shadow-2xl border-2 md:border-4 border-white z-30 hover:scale-105 transition-transform duration-300 group">
-                    <img src="assets/banners/banner5.jpg" alt="Nguyên liệu thực phẩm" class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Bottom-Left Circle - lab equipment/processing -->
-                <div class="absolute left-0 bottom-[10px] w-[100px] h-[100px] md:w-[155px] md:h-[155px] rounded-full overflow-hidden shadow-lg border-2 md:border-4 border-white z-20 hover:scale-105 transition-transform duration-300 group">
-                    <img src="assets/banners/banner8.jpg" alt="Nghiên cứu nguyên liệu" class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Bottom-Middle/Right Circle - green field / agricultural supply -->
-                <div class="absolute left-[90px] bottom-0 md:left-[150px] md:bottom-[10px] w-[95px] h-[95px] md:w-[145px] md:h-[145px] rounded-full overflow-hidden shadow-lg border-2 md:border-4 border-white z-10 hover:scale-105 transition-transform duration-300 group">
-                    <img src="assets/banners/banner10.jpg" alt="Chuỗi nông sản thực phẩm" class="w-full h-full object-cover">
+                <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-slate-100 hover:scale-[1.01] transition-transform duration-300 w-full max-w-[480px] aspect-square">
+                    <img src="assets/banners/Qualimeals - Poster KV 120x120.jpg" alt="Về chúng tôi - Qualimeals" class="w-full h-full object-cover">
                 </div>
             </div>
             
         </div>
-
-
 
         <!-- Bottom part: 4 Statistics Cards -->
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 pt-12 border-t border-slate-200/50">

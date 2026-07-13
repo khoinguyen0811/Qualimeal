@@ -509,4 +509,46 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+    // ----------------------------------------------------
+    // 9b. About Section Accordion (FAQ dropdowns)
+    // ----------------------------------------------------
+    const aboutFaqToggles = document.querySelectorAll(".about-faq-toggle");
+    aboutFaqToggles.forEach(toggle => {
+        toggle.addEventListener("click", () => {
+            const targetId = toggle.getAttribute("data-target");
+            const content = document.getElementById(targetId);
+            const icon = toggle.querySelector(".fa-chevron-down");
+            const parent = toggle.parentElement;
+
+            if (content) {
+                const isOpen = !content.classList.contains("max-h-0") && content.style.maxHeight;
+
+                // Close all other items
+                aboutFaqToggles.forEach(otherToggle => {
+                    const otherTargetId = otherToggle.getAttribute("data-target");
+                    const otherContent = document.getElementById(otherTargetId);
+                    const otherIcon = otherToggle.querySelector(".fa-chevron-down");
+                    const otherParent = otherToggle.parentElement;
+
+                    if (otherContent) {
+                        otherContent.style.maxHeight = null;
+                        otherContent.classList.add("max-h-0");
+                        if (otherIcon) otherIcon.classList.remove("rotate-180");
+                        otherParent.classList.remove("border-brand-emerald/40", "bg-white", "shadow-md");
+                        otherParent.classList.add("bg-slate-50/60", "border-slate-100");
+                    }
+                });
+
+                if (!isOpen) {
+                    // Open this item
+                    content.classList.remove("max-h-0");
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    if (icon) icon.classList.add("rotate-180");
+                    parent.classList.remove("bg-slate-50/60", "border-slate-100");
+                    parent.classList.add("border-brand-emerald/40", "bg-white", "shadow-md");
+                }
+            }
+        });
+    });
 });
