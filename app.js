@@ -535,7 +535,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         otherContent.style.maxHeight = null;
                         otherContent.classList.add("max-h-0");
                         if (otherIcon) otherIcon.classList.remove("rotate-180");
-                        otherParent.classList.remove("border-brand-emerald/40", "bg-white", "shadow-md");
+                        otherParent.classList.remove("border-brand-emerald/40", "bg-white");
                         otherParent.classList.add("bg-slate-50/60", "border-slate-100");
                     }
                 });
@@ -546,7 +546,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     content.style.maxHeight = content.scrollHeight + "px";
                     if (icon) icon.classList.add("rotate-180");
                     parent.classList.remove("bg-slate-50/60", "border-slate-100");
-                    parent.classList.add("border-brand-emerald/40", "bg-white", "shadow-md");
+                    parent.classList.add("border-brand-emerald/40", "bg-white");
                 }
             }
         });
