@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quy Chế Hoạt Động - QualiMeal</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Quy chế hoạt động website QualiMeal. Chi tiết các quy định về đăng ký dịch vụ khoa học công nghệ, quy trình thanh toán, giải quyết lỗi kỹ thuật và giao dịch an toàn.">
+    <meta name="keywords" content="quy chế hoạt động, quy chế QualiMeal, quy định website">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preconnect and Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Custom & Root Color CSS -->
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#A8201A',       /* Red Primary Dark */
+                            green: '#C82D1F',      /* Red Primary */
+                            emerald: '#3B943A',    /* Secondary Green */
+                            gold: '#76C143',       /* Secondary Light Green */
+                            beige: '#F9FAFB',      /* Neutral BG Light */
+                            orange: '#E05315',     /* Primary Orange */
+                            light: '#FFFFFF'       /* Neutral BG White */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        display: ['"Montserrat"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Deferred Interactivity Logic -->
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-brand-beige text-[#2d3527] font-sans antialiased overflow-x-hidden" data-page="regulations">
+
+    <!-- INCLUDE components/header.html -->
+
+    <!-- Page Title Banner -->
+    <div class="bg-slate-900 text-white py-16 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('assets/banners/banner4.jpg');"></div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center space-y-3">
+            <h1 class="font-display font-extrabold text-3xl md:text-4xl text-white">Quy Chế Hoạt Động</h1>
+            <p class="text-sm text-slate-300 max-w-lg mx-auto">Quy chế quy định hoạt động giới thiệu thông tin và cung cấp dịch vụ trực tuyến của QualiMeal.</p>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <main class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 md:px-8">
+            <div class="prose max-w-none text-slate-600 text-sm space-y-8 leading-relaxed">
+                <div>
+                    <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                        <i class="fa-solid fa-circle-info mr-2 text-brand-emerald"></i> 1. Nguyên tắc chung
+                    </h2>
+                    <p class="mb-3">Website QualiMeal là trang thông tin điện tử chính thức nhằm giới thiệu dịch vụ và hỗ trợ đăng ký trực tuyến cho các dịch vụ: tư vấn chứng nhận tiêu chuẩn chất lượng thực phẩm (ISO 22000, HACCP, GMP...), phân tích kiểm nghiệm sản phẩm, chuyển giao quy trình công nghệ R&D.</p>
+                    <p>Khách hàng tham gia giao dịch trên website phải tự nguyện, bình đẳng và tôn trọng các quy định pháp luật cũng như thỏa thuận hợp đồng.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                        <i class="fa-solid fa-list-check mr-2 text-brand-emerald"></i> 2. Quy trình giao dịch và đăng ký dịch vụ
+                    </h2>
+                    <p class="mb-3">Khách hàng có thể thực hiện đăng ký dịch vụ theo các bước sau:</p>
+                    <ul class="list-decimal pl-5 space-y-2">
+                        <li>Truy cập website, xem thông tin chi tiết về các dịch vụ tư vấn hoặc R&D.</li>
+                        <li>Điền đầy đủ thông tin vào form liên hệ/yêu cầu tư vấn hoặc bấm nút gọi trực tiếp tới Hotline.</li>
+                        <li>Chuyên viên QualiMeal liên hệ lại để khảo sát nhu cầu chi tiết, tiếp nhận tài liệu ban đầu.</li>
+                        <li>Hai bên thống nhất nội dung công việc và tiến hành ký kết hợp đồng dịch vụ trực tiếp (hoặc hợp đồng điện tử).</li>
+                        <li>Khách hàng gửi mẫu thực phẩm và hồ sơ liên quan để bắt đầu triển khai dịch vụ.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                        <i class="fa-solid fa-credit-card mr-2 text-brand-emerald"></i> 3. Quy trình thanh toán
+                    </h2>
+                    <p class="mb-3">Hình thức thanh toán chính là chuyển khoản ngân hàng theo tài khoản chính thức được quy định trên hợp đồng kinh tế. Các đợt thanh toán được thỏa thuận cụ thể theo từng giai đoạn triển khai công việc (ví dụ: Tạm ứng 50% sau khi ký hợp đồng và 50% sau khi bàn giao kết quả nghiên cứu/chứng chỉ).</p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                        <i class="fa-solid fa-triangle-exclamation mr-2 text-brand-emerald"></i> 4. Quản lý thông tin xấu
+                    </h2>
+                    <p class="mb-3">Nghiêm cấm các hành vi gửi thông tin giả mạo, spam thông tin thông qua các biểu mẫu liên hệ trên website. Mọi bình luận, phản hồi mang tính chất kích động, bôi nhọ danh dự của tổ chức, cá nhân hoặc quảng cáo dịch vụ khác trái phép sẽ bị hệ thống tự động xóa bỏ và chặn địa chỉ IP truy cập.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                        <i class="fa-solid fa-screwdriver-wrench mr-2 text-brand-emerald"></i> 5. Trách nhiệm khi xảy ra lỗi kỹ thuật
+                    </h2>
+                    <p class="mb-3">QualiMeal cam kết đảm bảo hạ tầng kỹ thuật hoạt động ổn định nhằm truyền tải thông tin thông suốt. Trường hợp xảy ra sự cố do lỗi kỹ thuật của nhà cung cấp hosting hoặc đường truyền internet, chúng tôi sẽ nỗ lực khắc phục trong thời gian sớm nhất. Tuy nhiên, chúng tôi không chịu trách nhiệm đối với các thiệt hại phát sinh do gián đoạn tạm thời ngoài tầm kiểm soát trực tiếp.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold font-display text-brand-deep border-b pb-2 mb-4 flex items-center">
+                        <i class="fa-solid fa-user-gear mr-2 text-brand-emerald"></i> 6. Quyền và nghĩa vụ của Ban quản lý website
+                    </h2>
+                    <p class="mb-3">Ban quản lý website có quyền thay đổi giao diện, bổ sung hoặc điều chỉnh thông tin kỹ thuật, thông tin dịch vụ mà không cần báo trước. Chúng tôi có nghĩa vụ duy trì tính chính xác của các thông tin tiêu chuẩn chất lượng công bố và phản hồi kịp thời các yêu cầu hợp lệ của đối tác gửi qua website.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- INCLUDE components/footer.html -->
+
+    <!-- INCLUDE components/modals.html -->
+
+</body>
+</html>

@@ -93,11 +93,13 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     transform: scale(1.02);
+    pointer-events: none;
 }
 .slide-item.active {
     opacity: 1;
     transform: scale(1);
     z-index: 10;
+    pointer-events: auto;
 }
 
 /* Utility classes for active menu state */
